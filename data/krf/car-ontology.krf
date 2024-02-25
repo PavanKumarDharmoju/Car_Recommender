@@ -1,0 +1,218 @@
+;; Ontology for Automobiles and their Specifications
+
+
+
+;; Classes
+(Class Automobile)
+(Class Engine)
+(Class Brand) 
+(Class EngineSpecs)
+(Class PerformanceSpecs)
+(Class TransmissionSpecs)
+(Class BrakesSpecs)
+(Class TiresSpecs)
+(Class DimensionsSpecs)
+(Class WeightSpecs)
+(Class FuelEconomySpecs)
+(Class SafetySpecs)
+
+
+;; Properties
+
+;; Automobile to Brand
+(Property hasBrand
+    (Domain Automobile)
+    (Range Brand)
+    (Description "Specifies the brand associated with a particular automobile."))
+
+;; Automobile to Engine
+(Property hasEngine
+    (Domain Automobile)
+    (Range Engine)
+    (Description "Links an automobile to its engine."))
+
+;; Engine to EngineSpecs
+(Property hasEngineSpecs
+    (Domain Engine)
+    (Range EngineSpecs)
+    (Description "Connects an engine to its detailed specifications."))
+
+;; Automobile to PerformanceSpecs
+(Property hasPerformanceSpecs
+    (Domain Automobile)
+    (Range PerformanceSpecs)
+    (Description "Associates an automobile with its performance specifications."))
+
+;; Automobile to SafetySpecs
+(Property hasSafetySpecs
+    (Domain Automobile)
+    (Range SafetySpecs)
+    (Description "Associates an automobile with its safety specifications."))
+
+;; Automobile to FuelEconomySpecs
+(Property hasFuelEconomySpecs
+    (Domain Automobile)
+    (Range FuelEconomySpecs)
+    (Description "Links an automobile to its fuel economy specifications."))
+
+;; Automobile to TransmissionSpecs
+(Property hasTransmissionSpecs
+    (Domain Automobile)
+    (Range TransmissionSpecs)
+    (Description "Associates an automobile with its transmission specifications."))
+
+;; Automobile to BrakesSpecs
+(Property hasBrakesSpecs
+    (Domain Automobile)
+    (Range BrakesSpecs)
+    (Description "Associates an automobile with its brakes specifications."))
+
+;; Automobile to TiresSpecs
+(Property hasTiresSpecs
+    (Domain Automobile)
+    (Range TiresSpecs)
+    (Description "Associates an automobile with its tires specifications."))
+
+;; Automobile to DimensionsSpecs
+(Property hasDimensionsSpecs
+    (Domain Automobile)
+    (Range DimensionsSpecs)
+    (Description "Links an automobile to its dimensional specifications."))
+
+;; Automobile to WeightSpecs
+(Property hasWeightSpecs
+    (Domain Automobile)
+    (Range WeightSpecs)
+    (Description "Associates an automobile with its weight specifications."))
+
+;; Engine Specs Properties
+(Property hasCylinders
+    (Domain EngineSpecs)
+    (Range String)
+    (Description "Type of engine cylinders, e.g., V8."))
+
+(Property hasDisplacement
+    (Domain EngineSpecs)
+    (Range Decimal)
+    (Unit "cm3")
+    (Description "Engine displacement in cubic centimeters."))
+
+(Property hasPower
+    (Domain EngineSpecs)
+    (Range String)
+    (Description "Engine power output in Kilowatts, Horsepower, and Brake Horsepower."))
+
+(Property hasTorque
+    (Domain EngineSpecs)
+    (Range String)
+    (Description "Engine torque in Lb-Ft and Nm."))
+
+(Property hasFuelSystem
+    (Domain EngineSpecs)
+    (Range String)
+    (Description "Type of fuel system, e.g., Multipoint Injection Naturally Aspirated."))
+
+(Property hasFuelType
+    (Domain EngineSpecs)
+    (Range String)
+    (Description "Type of fuel used, e.g., Gasoline."))
+
+(Property hasFuelCapacity
+    (Domain EngineSpecs)
+    (Range String)
+    (Unit "gallons")
+    (Description "Fuel tank capacity in gallons and liters."))
+
+;; Performance Specs Properties
+(Property hasTopSpeed
+    (Domain PerformanceSpecs)
+    (Range String)
+    (Description "Maximum top speed of the automobile."))
+
+;; Acceleration 0-62 Mph (0-100 Kph)
+(Property hasAcceleration0To62Mph
+    (Domain PerformanceSpecs)
+    (Range String)
+    (Unit "seconds")
+    (Description "The time it takes for the automobile to accelerate from 0 to 62 mph or 0 to 100 kph."))
+
+;; Transmission Specs Properties
+(Property hasDriveType
+    (Domain TransmissionSpecs)
+    (Range String)
+    (Description "Drive type, e.g., Rear Wheel Drive."))
+
+(Property hasGearbox
+    (Domain TransmissionSpecs)
+    (Range String)
+    (Description "Type and number of gears in the gearbox."))
+
+;; Brakes Specs Properties
+(Property hasFrontBrakes
+    (Domain BrakesSpecs)
+    (Range String)
+    (Description "Type of front brakes, e.g., Ventilated Discs."))
+
+(Property hasRearBrakes
+    (Domain BrakesSpecs)
+    (Range String)
+    (Description "Type of rear brakes, e.g., Ventilated Discs."))
+
+;; Tires Specs Properties
+(Property hasTireSize
+    (Domain TiresSpecs)
+    (Range String)
+    (Description "Tire size specification."))
+
+
+;; Dimensions Properties
+;; Front/Rear Track
+(Property hasFrontTrack
+    (Domain DimensionsSpecs)
+    (Range String)
+    (Description "The distance between the center lines of the front wheels."))
+
+(Property hasRearTrack
+    (Domain DimensionsSpecs)
+    (Range String)
+    (Description "The distance between the center lines of the rear wheels."))
+
+;; Aerodynamics (Cd)
+(Property hasAerodynamicsCd
+    (Domain DimensionsSpecs)
+    (Range String)
+    (Description "The coefficient of drag (Cd) value, measuring the aerodynamic efficiency of the automobile."))
+
+;; Aerodynamics (Frontal Area)
+(Property hasAerodynamicsFrontalArea
+    (Domain DimensionsSpecs)
+    (Range String)
+    (Description "The frontal area of the automobile measured in square meters (m2), affecting its aerodynamics."))
+
+;; Turning Circle (Wall to Wall)
+(Property hasTurningCircleWallToWall
+    (Domain DimensionsSpecs)
+    (Range String)
+    (Description "The turning circle or turning radius of the automobile, measured from wall to wall, indicating how tightly it can turn."))
+
+;; Weight Specs Properties
+(Property hasUnladenWeight
+    (Domain WeightSpecs)
+    (Range String)
+    (Units "lbs")
+    (Description "The unladen weight of the automobile."))
+
+;; Fuel Economy (NEDC) Properties
+(Property hasCityMileage
+    (Domain FuelEconomy)
+    (Range String)
+    (Unit "mpg US")
+    (Description "Fuel economy in city driving conditions."))
+
+(Property hasHighwayMileage
+    (Domain FuelEconomy)
+    (Range String)
+    (Unit "mpg US")
+    (Description "Fuel economy in highway driving conditions."))
+
+
