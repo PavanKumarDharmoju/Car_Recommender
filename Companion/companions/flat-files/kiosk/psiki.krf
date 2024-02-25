@@ -1,0 +1,39 @@
+;;;; -*-  Mode: LISP; Syntax: Common-Lisp; Base: 10                          -*-
+;;;; ---------------------------------------------------------------------------
+;;;; File name: psiki.krf
+;;;;    System: 
+;;;;    Author: Crouse
+;;;;   Created: September 13, 2018 13:36:01
+;;;;   Purpose: 
+;;;; ---------------------------------------------------------------------------
+;;;;  $LastChangedDate: 2016-10-24 17:08:27 -0500 (Mon, 24 Oct 2016) $
+;;;;  $LastChangedBy: Crouse $
+;;;; ---------------------------------------------------------------------------
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(in-microtheory UniversalVocabularyMt)
+
+(isa KioskOutputPredicate PredicateType)
+
+(isa psikiSayText KioskOutputPredicate)
+(arity psikiSayText 1)
+
+(isa psikiOnlySay KioskOutputPredicate)
+(arity psikiOnlySay 1)
+
+(isa psikiShowMap KioskOutputPredicate)
+(arity psikiShowMap 2)
+
+(isa psikiShowUrl KioskOutputPredicate)
+(arity psikiShowUrl 1)
+
+(isa psikiSayThis KioskOutputPredicate)
+(arity psikiSayThis 1)
+
+(isa psikiDefault KioskOutputPredicate)
+(arity psikiDefault 1)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; End of Code
