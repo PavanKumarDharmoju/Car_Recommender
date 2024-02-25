@@ -4,11 +4,11 @@
 
 (in-microtheory CarWorldMt)
 
-(isa CarRulesINDMt Microtheory)
-(comment 371TestRulesMt
-  "The CarRulesINDMt microtheory is for running car collection hornclauses per India standards")
+(isa CarRulesINMt Microtheory)
+(comment CarRulesINMt
+  "CarRulesINMt is a microtheory for cars in car world's system that pertain to India standards.")
 
-(genlMt CarWorldMt CarRulesINDMt)
+(genlMt CarWorldMt CarRulesINMt)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; End of Code

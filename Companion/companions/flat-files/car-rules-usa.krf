@@ -4,11 +4,11 @@
 
 (in-microtheory CarWorldMt)
 
-(isa CarRulesUSAMt Microtheory)
-(comment 371TestRulesMt
-  "The CarRulesUSAMt microtheory is for running car collection hornclauses per USA standards")
+(isa CarRulesUSMt Microtheory)
+(comment CarRulesUSAMt
+  "CarRulesUSMt is a microtheory for cars in car world's system that pertain to US standards.")
 
-(genlMt CarWorldMt CarRulesUSAMt)
+(genlMt CarWorldMt CarRulesUSMt)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; End of Code
