@@ -1,7 +1,3 @@
-;;;; -*-  Mode: LISP; Syntax: Common-Lisp; Base: 10                          -*-
-;;;; ---------------------------------------------------------------------------
-;;;; ---------------------------------------------------------------------------
-
 ;;; Microtheory Definition
 (in-microtheory CarWorldMt)
 
@@ -31,8 +27,6 @@
 (comment Transmission
   "Transmission represents different types of car transmissions which is either automatic or manual")
 
-
-;;;; ---------------------------------------------------------------------------
 ;;; the Predicates for cars
 
 ;;; Basic Attributes
@@ -91,7 +85,6 @@
 (arity carHeight 2)
 (arg1Isa carHeight Car)
 (arg2Isa carHeight ScalarInterval)
-
 
 ;;; Performance Attributes
 (isa mainEngine Predicate)
@@ -152,7 +145,6 @@ fuel economy in highway driving conditions, measured in mpg.")
 (arg1Isa engineTypeOf CarEngine)
 (arg2Isa engineTypeOf EngineType)
 
-
 ;;; Pollution Attributes
 (isa engineCO2Emission Predicate)
 (comment engineCO2Emission "engineCO2Emission relates a car engine to its CO2 emissions.")
@@ -165,13 +157,9 @@ fuel economy in highway driving conditions, measured in mpg.")
 (arity isEngicElectric 1)
 (arg1Isa isEngicElectric CarEngine)
 
-
 ;;; Transmission
 (isa carTransmission Predicate)
 (comment carTransmission "carTransmission relates a car to its transmission type.")
 (arity carTransmission 2)
 (arg1Isa carTransmission Car)
 (arg2Isa carTransmission Transmission)
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;; End of Code

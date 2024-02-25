@@ -1,0 +1,43 @@
+;;;; -*-  Mode: LISP; Syntax: Common-Lisp; Base: 10                          -*-
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+(in-microtheory CarWorldMt)
+
+(isa Lamborghini-Model CarModel)
+(comment Lamborghini-Model "Lamborghini-Model represents a specific model of Lamborghini cars.")
+
+(isa Lambho-4L-TT-V8 CarEngine)
+(comment Lambho-4L-TT-V8 "Lambho-4L-TT-V8 represents a specific type of engine used in Lamborghini cars.")
+
+(isa 4L-TT-V8 EngineType)
+(comment 4L-TT-V8 "4L-TT-V8 is an engine type classification, representing a 4-liter twin-turbo V8 engine.")
+
+(isa Lamborghini-Urus-2017 Car)
+(comment Lamborghini-Urus-2017 "A car model by Lamborghini, known for its performance and luxury.")
+
+(isa Automatic Transmission)
+(comment Automatic "Automatic represents the automatic transmission type in cars.")
+
+
+;;; Car-Specific Details - Lamborghini
+(yearOfManufacture Lamborghini-Urus-2017 2017)
+(colorOfCar Lamborghini-Urus-2017 Yellow)
+(cargoVolume Lamborghini-Urus-2017 56.3)
+(carLength Lamborghini-Urus-2017 201.3)
+(carHeight Lamborghini-Urus-2017 80)
+(carWidth Lamborghini-Urus-2017 64.5)
+(mainEngine Lamborghini-Urus-2017 Lambho-4L-TT-V8)
+
+;;; Engine-Specific Details - Lambho-4L-TT-V8
+(engineHP Lambho-4L-TT-V8 641)
+(engineAccelerationMph Lambho-4L-TT-V8 3.6) ; Assuming 3.6 seconds for 0-60 mph
+(engineTopSpeedMph Lambho-4L-TT-V8 190) ; Assuming 190 mph as top speed
+(engineTorqueNm Lambho-4L-TT-V8 850) ; Assuming 850 Nm torque
+(engineFuelCapacityGl Lambho-4L-TT-V8 19.8) ; Assuming 19.8 gallons fuel capacity
+(engineCityFuelEconomyMpg Lambho-4L-TT-V8 12) ; Assuming 12 mpg in city
+(engineHighwayFuelEconomyMpg Lambho-4L-TT-V8 17) ; Assuming 17 mpg on highway
+(engineTypeOf Lambho-4L-TT-V8 4L-TT-V8)
+
+(engineCO2Emission Lambho-4L-TT-V8 325) ; Assuming 325 g/km CO2 emission
+(carTransmission Lamborghini-Urus-2017 Automatic)
