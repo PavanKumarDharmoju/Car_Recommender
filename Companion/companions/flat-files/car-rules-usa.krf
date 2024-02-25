@@ -1,0 +1,14 @@
+;;;; -*-  Mode: LISP; Syntax: Common-Lisp; Base: 10                          -*-
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+(in-microtheory CarWorldMt)
+
+(isa CarRulesUSAMt Microtheory)
+(comment 371TestRulesMt
+  "The CarRulesUSAMt microtheory is for running car collection hornclauses per USA standards")
+
+(genlMt CarWorldMt CarRulesUSAMt)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; End of Code
