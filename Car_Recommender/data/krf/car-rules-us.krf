@@ -10,8 +10,7 @@
 (genlMt CarRulesUS CarWorldMt)
 
 ;;; LuxurySUV
-"(<== (isa ?car LuxurySUV)
-(numberOfDoors ?car ?doors) (greaterThan ?doors 4)
+(<== (isa ?car LuxurySUV)
 (cargoVolume ?car ?cargovol) (greaterThan ?cargovol 15)
 (carLength ?car ?length) (greaterThan ?length 180)
 (carWidth ?car ?width) (greaterThan ?width 60)
@@ -24,10 +23,11 @@
 (mainEngine ?car ?engine) (engineCityFuelEconomyMpg ?engine ?ecfem) (greaterThan ?ecfem 10)
 (mainEngine ?car ?engine) (engineHighwayFuelEconomyMpg ?engine ?ehfem) (greaterThan ?ehfem 10)
 (mainEngine ?car ?engine) (engineCO2Emission ?engine ?ecoe)
-)"
+(carTransmission ?car ?transmission) (equals ?transmission Automatic)
+)
 
 ;;; Compact SUV
-"(<== (isa ?car CompactSUV)
+(<== (isa ?car CompactSUV)
 (cargoVolume ?car ?cargovol) (greaterThan ?cargovol 15)
 (carLength ?car ?length) (and (greaterThan ?length 170) (lessThan ?length 190))
 (carWidth ?car ?width) (greaterThan ?width 70)
@@ -41,10 +41,10 @@
 (mainEngine ?car ?engine) (engineHighwayFuelEconomyMpg ?engine ?ehfem) (greaterThan ?ehfem 25)
 (mainEngine ?car ?engine) (engineCO2Emission ?engine ?ecoe) (lessThan ?ecoe 250)
 (carTransmission ?car ?transmission)
-)"
+)
 
 ;;; Muscle Car
-"(<== (isa ?car MuscleCar)
+(<== (isa ?car MuscleCar)
 (cargoVolume ?car ?cargovol) (greaterThan ?cargovol 10)
 (carLength ?car ?length) (greaterThan ?length 180)
 (carWidth ?car ?width) (greaterThan ?width 70)
@@ -57,10 +57,10 @@
 (mainEngine ?car ?engine) (engineCityFuelEconomyMpg ?engine ?ecfem) (lessThan ?ecfem 20)
 (mainEngine ?car ?engine) (engineHighwayFuelEconomyMpg ?engine ?ehfem) (lessThan ?ehfem 30)
 (carTransmission ?car ?transmission) (or (equals ?transmission Automatic) (equals ?transmission Manual))
-)"
+)
 
 ;;; Sports Car
-"(<== (isa ?car SportsCar)
+(<== (isa ?car SportsCar)
 (carLength ?car ?length) (lessThan ?length 180)
 (carWidth ?car ?width) (greaterThan ?width 70)
 (carHeight ?car ?height) (lessThan ?height 55)
@@ -70,4 +70,4 @@
 (mainEngine ?car ?engine) (engineTorqueNm ?engine ?etn) (greaterThan ?etn 290)
 (mainEngine ?car ?engine) (engineFuelCapacityGl ?engine ?efcg) (greaterThan ?efcg 15)
 (carTransmission ?car ?transmission) (or (equals ?transmission Automatic) (equals ?transmission Manual))
-)"
+)
