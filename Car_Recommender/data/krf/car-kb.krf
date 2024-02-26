@@ -45,12 +45,7 @@
 
 
 ;;;; ---------------------------------------------------------------------------
-;;;; ---------------------------------------------------------------------------
 
-
-
-
-(in-microtheory CarWorldMt)
 
 ;;; Car Model Definition for Toyota RAV4
 (isa Toyota-RAV4-Model CarModel)
@@ -99,12 +94,7 @@
 
 
 ;;;; ---------------------------------------------------------------------------
-;;;; ---------------------------------------------------------------------------
 
-
-
-
-(in-microtheory CarWorldMt)
 
 ;;; Car Model Definition for Honda CR-V
 (isa Honda-CR-V-Model CarModel)
@@ -152,11 +142,7 @@
 
 
 ;;;; ---------------------------------------------------------------------------
-;;;; ---------------------------------------------------------------------------
 
-
-
-(in-microtheory CarWorldMt)
 
 ;;; Car Model Definition for Tesla Model Y
 (isa Tesla-Model-Y-Model CarModel)
@@ -201,9 +187,8 @@
 
 
 ;;;; ---------------------------------------------------------------------------
-;;;; ---------------------------------------------------------------------------
 
-(in-microtheory CarWorldMt)
+
 
 ;;; Car Model Definition for Audi Q7
 (isa Audi-Q7-Model CarModel)
@@ -250,9 +235,8 @@
 (engineTypeOf Q7-3L-TFSI-V6 3L-TFSI-V6)
 
 ;;;; ---------------------------------------------------------------------------
-;;;; ---------------------------------------------------------------------------
 
-(in-microtheory CarWorldMt)
+
 
 ;;; Car Model Definition for Dodge Challenger
 (isa Dodge-Challenger-Model CarModel)
@@ -300,9 +284,8 @@
 
 
 ;;;; ---------------------------------------------------------------------------
-;;;; ---------------------------------------------------------------------------
 
-(in-microtheory CarWorldMt)
+
 
 ;;; Car Model Definition for Ferrari 250 GTO
 (isa Ferrari-250-GTO-Model CarModel)
@@ -354,7 +337,7 @@
 ;;;; FICTIONAL CARS
 ;;;; ---------------------------------------------------------------------------
 
-(in-microtheory CarWorldMt)
+
 
 ;;; Car Model Definition for The Dark Knight Batmobile
 (isa Batmobile-Model CarModel)
@@ -393,8 +376,6 @@
 (engineTypeOf Batmobile-Jet-Engine Jet-Engine)
 
 
-(in-microtheory CarWorldMt)
-
 ;;; Car Model Definition for Blade Runner 2049 Spinner
 (isa Spinner-Model CarModel)
 (comment Spinner-Model "Spinner-Model represents the specific model of flying cars used in Blade Runner 2049 for transportation and patrol, capable of VTOL and horizontal flight.")
@@ -427,5 +408,4 @@
 
 ;;; Engine-Specific Details for Spinner VTOL Engine
 (engineTypeOf Spinner-VTOL-Engine Advanced-Propulsion)
-
 
