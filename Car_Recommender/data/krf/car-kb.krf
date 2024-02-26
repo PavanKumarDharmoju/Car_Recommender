@@ -383,10 +383,6 @@
 ;;; Specifications for The Dark Knight Batmobile
 (yearOfManufacture Batmobile-Dark-Knight 2008) ; Assuming the year the movie was released
 (colorOfCar Batmobile-Dark-Knight Black)
-(cargoVolume Batmobile-Dark-Knight NA) ; Not applicable or not provided
-(carLength Batmobile-Dark-Knight NA) ; Length in inches, not specified
-(carHeight Batmobile-Dark-Knight NA) ; Height in inches, not specified
-(carWidth Batmobile-Dark-Knight NA) ; Width in inches, not specified
 (mainEngine Batmobile-Dark-Knight Batmobile-Jet-Engine)
 (carTransmission Batmobile-Dark-Knight Advanced-Automatic)
 
@@ -394,10 +390,6 @@
 (engineHP Batmobile-Jet-Engine 1500) ; Assuming fictional 1500 horsepower
 (engineAccelerationSec Batmobile-Jet-Engine 2.5) ; 0-60 mph in seconds, estimated for dramatic effect
 (engineTopSpeedMph Batmobile-Jet-Engine 350) ; Top speed in mph, estimated for dramatic effect
-(engineTorqueNm Batmobile-Jet-Engine NA) ; Not applicable or not provided
-(engineFuelCapacityGl Batmobile-Jet-Engine NA) ; Not applicable for a jet engine
-(engineCityFuelEconomyMpg Batmobile-Jet-Engine NA) ; Not applicable for a jet engine
-(engineHighwayFuelEconomyMpg Batmobile-Jet-Engine NA) ; Not applicable for a jet engine
 (engineTypeOf Batmobile-Jet-Engine Jet-Engine)
 
 
@@ -430,21 +422,10 @@
 ;;; Specifications for the Blade Runner 2049 Spinner
 (yearOfManufacture Spinner-Blade-Runner-2049 2049) ; The fictional year of the movie setting
 (colorOfCar Spinner-Blade-Runner-2049 Futuristic-Design)
-(cargoVolume Spinner-Blade-Runner-2049 NA) ; Not specified, given the fictional nature
-(carLength Spinner-Blade-Runner-2049 NA) ; Length, not specified
-(carHeight Spinner-Blade-Runner-2049 NA) ; Height, not specified
-(carWidth Spinner-Blade-Runner-2049 NA) ; Width, not specified
 (mainEngine Spinner-Blade-Runner-2049 Spinner-VTOL-Engine)
 (carTransmission Spinner-Blade-Runner-2049 Futuristic-Transmission)
 
 ;;; Engine-Specific Details for Spinner VTOL Engine
-(engineHP Spinner-VTOL-Engine NA) ; Horsepower, not applicable in the traditional sense
-(engineAccelerationSec Spinner-VTOL-Engine NA) ; Acceleration, not applicable as it does not accelerate in a traditional manner
-(engineTopSpeedMph Spinner-VTOL-Engine NA) ; Top speed, not specified in the movie
-(engineTorqueNm Spinner-VTOL-Engine NA) ; Torque, not applicable in the traditional sense
-(engineFuelCapacityGl Spinner-VTOL-Engine NA) ; Fuel capacity, not specified, considering futuristic energy sources
-(engineCityFuelEconomyMpg Spinner-VTOL-Engine NA) ; Not applicable for a flying vehicle
-(engineHighwayFuelEconomyMpg Spinner-VTOL-Engine NA) ; Not applicable for a flying vehicle
 (engineTypeOf Spinner-VTOL-Engine Advanced-Propulsion)
 
 
