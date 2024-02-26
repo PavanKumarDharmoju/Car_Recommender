@@ -32,7 +32,7 @@
 
 ;;; Engine-Specific Details - Lambho-4L-TT-V8
 (engineHP Lambho-4L-TT-V8 641)
-(engineAccelerationMph Lambho-4L-TT-V8 3.6) ; Assuming 3.6 seconds for 0-60 mph
+(engineAcceleration62 Lambho-4L-TT-V8 3.6) ; Assuming 3.6 seconds for 0-60 mph
 (engineTopSpeedMph Lambho-4L-TT-V8 190) ; Assuming 190 mph as top speed
 (engineTorqueNm Lambho-4L-TT-V8 850) ; Assuming 850 Nm torque
 (engineFuelCapacityGl Lambho-4L-TT-V8 19.8) ; Assuming 19.8 gallons fuel capacity
@@ -83,7 +83,7 @@
 
 ;;; Engine-Specific Details for RAV4 Standard Engine
 (engineHP RAV4-Standard-Engine 203)
-(engineAccelerationMph RAV4-Standard-Engine 8.0)
+(engineAcceleration62 RAV4-Standard-Engine 8.0)
 (engineTopSpeedMph RAV4-Standard-Engine 130)
 (engineTorqueNm RAV4-Standard-Engine 243)
 (engineFuelCapacityGl RAV4-Standard-Engine 14.5)
@@ -132,7 +132,7 @@
 
 ;;; Engine-Specific Details for CR-V Standard Engine
 (engineHP CR-V-Standard-Engine 190) ; Assuming 190 horsepower for the turbocharged engine
-(engineAccelerationMph CR-V-Standard-Engine 7.8) ; Assuming approximately 7.8 seconds for 0-60 mph
+(engineAcceleration62 CR-V-Standard-Engine 7.8) ; Assuming approximately 7.8 seconds for 0-60 mph
 (engineTopSpeedMph CR-V-Standard-Engine 125) ; Assuming a top speed of around 125 mph
 (engineTorqueNm CR-V-Standard-Engine 243) ; Assuming 243 Nm torque
 (engineFuelCapacityGl CR-V-Standard-Engine 14.0) ; Assuming a fuel capacity of 14.0 gallons
@@ -179,8 +179,8 @@
 (carTransmission Tesla-Model-Y-2021 Single-Speed)
 
 ;;; Motor-Specific Details for Model Y Dual Motor
-(EngineHP Model-Y-Dual-Motor 384) ; Combined horsepower of the dual motors
-(EngineAccelerationSec Model-Y-Dual-Motor 4.8) ; 0-60 mph in seconds
+(engineHP Model-Y-Dual-Motor 384) ; Combined horsepower of the dual motors
+(engineAcceleration62 Model-Y-Dual-Motor 4.8) ; 0-60 mph in seconds
 (EngineTopSpeedMph Model-Y-Dual-Motor 135) ; Top speed in mph
 (EngineRangeMiles Model-Y-Dual-Motor 326) ; Estimated range in miles
 (EngineTypeOf Model-Y-Dual-Motor Dual-Motor-All-Wheel-Drive)
@@ -226,7 +226,7 @@
 
 ;;; Engine-Specific Details for Q7 3L TFSI V6
 (engineHP Q7-3L-TFSI-V6 329) ; Assuming 329 horsepower
-(engineAccelerationMph Q7-3L-TFSI-V6 5.7) ; 0-60 mph in seconds
+(engineAcceleration62 Q7-3L-TFSI-V6 5.7) ; 0-60 mph in seconds
 (engineTopSpeedMph Q7-3L-TFSI-V6 155) ; Top speed in mph (electronically limited)
 (engineTorqueNm Q7-3L-TFSI-V6 440) ; Assuming 440 Nm torque
 (engineFuelCapacityGl Q7-3L-TFSI-V6 22.5) ; Assuming a fuel capacity of 22.5 gallons
@@ -274,7 +274,7 @@
 
 ;;; Engine-Specific Details for Challenger Hemi V8
 (engineHP Challenger-Hemi-V8 485) ; Assuming 485 horsepower for a specific Hemi V8 model
-(engineAccelerationMph Challenger-Hemi-V8 4.3) ; Assuming 4.3 seconds for 0-60 mph
+(engineAcceleration62 Challenger-Hemi-V8 4.3) ; Assuming 4.3 seconds for 0-60 mph
 (engineTopSpeedMph Challenger-Hemi-V8 182) ; Assuming 182 mph as top speed
 (engineTorqueNm Challenger-Hemi-V8 644) ; Assuming 644 Nm torque
 (engineFuelCapacityGl Challenger-Hemi-V8 18.5) ; Assuming 18.5 gallons fuel capacity
@@ -322,7 +322,7 @@
 
 ;;; Engine-Specific Details for GTO V12 Engine
 (engineHP GTO-V12-Engine 296) ; Assuming 296 horsepower
-(engineAccelerationMph GTO-V12-Engine 6.1) ; Acceleration times not typically documented for classic cars
+(engineAcceleration62 GTO-V12-Engine 6.1) ; Acceleration times not typically documented for classic cars
 (engineTopSpeedMph GTO-V12-Engine 174) ; Assuming 174 mph as top speed
 (engineTorqueNm GTO-V12-Engine 294) ; Torque figures not commonly specified for vintage engines
 (engineFuelCapacityGl GTO-V12-Engine 22.7) ; Assuming 22.7 gallons fuel capacity
@@ -366,6 +366,10 @@
 ;;; Specifications for The Dark Knight Batmobile
 (yearOfManufacture Batmobile-Dark-Knight 2008) ; Assuming the year the movie was released
 (colorOfCar Batmobile-Dark-Knight Black)
+(cargoVolume Batmobile-Dark-Knight 30) ; Speculative cargo volume in cubic feet
+(carLength Batmobile-Dark-Knight 150) ; Speculative length in inches
+(carHeight Batmobile-Dark-Knight 54) ; Speculative height in inches
+(carWidth Batmobile-Dark-Knight 94) ; Speculative width in inches
 (mainEngine Batmobile-Dark-Knight Batmobile-Jet-Engine)
 (carTransmission Batmobile-Dark-Knight Advanced-Automatic)
 
@@ -373,6 +377,10 @@
 (engineHP Batmobile-Jet-Engine 1500) ; Assuming fictional 1500 horsepower
 (engineAccelerationSec Batmobile-Jet-Engine 2.5) ; 0-60 mph in seconds, estimated for dramatic effect
 (engineTopSpeedMph Batmobile-Jet-Engine 350) ; Top speed in mph, estimated for dramatic effect
+(engineTorqueNm Batmobile-Jet-Engine 2000) ; Speculative torque in Nm
+(engineFuelCapacityGl Batmobile-Jet-Engine 100) ; Speculative fuel capacity in gallons
+(engineCityFuelEconomyMpg Batmobile-Jet-Engine 5) ; Speculative city fuel economy in mpg
+(engineHighwayFuelEconomyMpg Batmobile-Jet-Engine 8) ; Speculative highway fuel economy in mpg
 (engineTypeOf Batmobile-Jet-Engine Jet-Engine)
 
 
@@ -408,4 +416,3 @@
 
 ;;; Engine-Specific Details for Spinner VTOL Engine
 (engineTypeOf Spinner-VTOL-Engine Advanced-Propulsion)
-
