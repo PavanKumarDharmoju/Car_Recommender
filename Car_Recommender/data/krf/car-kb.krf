@@ -184,6 +184,7 @@
 (EngineTopSpeedMph Model-Y-Dual-Motor 135) ; Top speed in mph
 (EngineRangeMiles Model-Y-Dual-Motor 326) ; Estimated range in miles
 (EngineTypeOf Model-Y-Dual-Motor Dual-Motor-All-Wheel-Drive)
+;;; !!! MISSING - engineTorqueNm
 
 
 ;;;; ---------------------------------------------------------------------------
