@@ -58,3 +58,16 @@
 (mainEngine ?car ?engine) (engineHighwayFuelEconomyMpg ?engine ?ehfem) (lessThan ?ehfem 30)
 (carTransmission ?car ?transmission) (or (equals ?transmission Automatic) (equals ?transmission Manual))
 )"
+
+;;; Sports Car
+"(<== (isa ?car SportsCar)
+(carLength ?car ?length) (lessThan ?length 180)
+(carWidth ?car ?width) (greaterThan ?width 70)
+(carHeight ?car ?height) (lessThan ?height 55)
+(mainEngine ?car ?engine) (engineHP ?engine ?ehp) (greaterThan ?ehp 290)
+(mainEngine ?car ?engine) (engineAcceleration62 ?engine ?eam) (lessThan ?eam 7)
+(mainEngine ?car ?engine) (engineTopSpeedMph ?engine ?etsm) (greaterThan ?etsm 150)
+(mainEngine ?car ?engine) (engineTorqueNm ?engine ?etn) (greaterThan ?etn 290)
+(mainEngine ?car ?engine) (engineFuelCapacityGl ?engine ?efcg) (greaterThan ?efcg 15)
+(carTransmission ?car ?transmission) (or (equals ?transmission Automatic) (equals ?transmission Manual))
+)"
