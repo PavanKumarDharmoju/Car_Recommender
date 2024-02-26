@@ -90,8 +90,7 @@
 (engineCityFuelEconomyMpg RAV4-Standard-Engine 28)
 (engineHighwayFuelEconomyMpg RAV4-Standard-Engine 35)
 (engineTypeOf RAV4-Standard-Engine 2.5L-4-Cylinder)
-
-
+(engineCO2Emission RAV4-Standard-Engine 199)
 
 ;;;; ---------------------------------------------------------------------------
 
