@@ -181,6 +181,9 @@ fuel economy in highway driving conditions, measured in mpg.")
 (isa CompactSUV Collection)
 (genls CompactSUV Car)
 
+(isa MuscleCar Collection)
+(genls MuscleCar Car)
+
 (isa SportsCar Collection)
 (genls SportsCar Car)
 
@@ -189,9 +192,6 @@ fuel economy in highway driving conditions, measured in mpg.")
 
 (isa VTOL Collection)
 (genls VTOL Car)
-
-(isa MuscleCar Collection)
-(genls MuscleCar Car)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; End of Code

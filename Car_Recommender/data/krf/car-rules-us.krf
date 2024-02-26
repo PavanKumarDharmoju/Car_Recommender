@@ -42,3 +42,19 @@
 (mainEngine ?car ?engine) (engineCO2Emission ?engine ?ecoe) (lessThan ?ecoe 250)
 (carTransmission ?car ?transmission)
 )"
+
+;;; Muscle Car
+"(<== (isa ?car MuscleCar)
+(cargoVolume ?car ?cargovol) (greaterThan ?cargovol 10)
+(carLength ?car ?length) (greaterThan ?length 180)
+(carWidth ?car ?width) (greaterThan ?width 70)
+(carHeight ?car ?height) (greaterThan ?height 50)
+(mainEngine ?car ?engine) (engineHP ?engine ?ehp) (greaterThan ?ehp 400)
+(mainEngine ?car ?engine) (engineAcceleration62 ?engine ?eam) (lessThan ?eam 5)
+(mainEngine ?car ?engine) (engineTopSpeedMph ?engine ?etsm) (greaterThan ?etsm 140)
+(mainEngine ?car ?engine) (engineTorqueNm ?engine ?etn) (greaterThan ?etn 400)
+(mainEngine ?car ?engine) (engineFuelCapacityGl ?engine ?efcg) (greaterThan ?efcg 15)
+(mainEngine ?car ?engine) (engineCityFuelEconomyMpg ?engine ?ecfem) (lessThan ?ecfem 20)
+(mainEngine ?car ?engine) (engineHighwayFuelEconomyMpg ?engine ?ehfem) (lessThan ?ehfem 30)
+(carTransmission ?car ?transmission) (or (equals ?transmission Automatic) (equals ?transmission Manual))
+)"
