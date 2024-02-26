@@ -185,6 +185,7 @@
 (EngineRangeMiles Model-Y-Dual-Motor 326) ; Estimated range in miles
 (EngineTypeOf Model-Y-Dual-Motor Dual-Motor-All-Wheel-Drive)
 ;;; !!! MISSING - engineTorqueNm
+;;; !!! MISSING - needs a predicate that states that engine is electric
 
 
 ;;;; ---------------------------------------------------------------------------
