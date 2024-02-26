@@ -42,3 +42,409 @@
 
 (engineCO2Emission Lambho-4L-TT-V8 325) ; Assuming 325 g/km CO2 emission
 (carTransmission Lamborghini-Urus-2017 Automatic)
+
+
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+
+
+
+(in-microtheory CarWorldMt)
+
+;;; Car Model Definition for Toyota RAV4
+(isa Toyota-RAV4-Model CarModel)
+(comment Toyota-RAV4-Model "Toyota-RAV4-Model represents a specific model of Toyota RAV4 cars.")
+
+;;; Car Engine Definition for Toyota RAV4 Standard Engine
+(isa RAV4-Standard-Engine CarEngine)
+(comment RAV4-Standard-Engine "RAV4-Standard-Engine represents a specific type of engine used in Toyota RAV4 cars.")
+
+;;; Engine Type Classification for Toyota RAV4 Engine
+(isa 2.5L-4-Cylinder EngineType)
+(comment 2.5L-4-Cylinder "2.5L-4-Cylinder is an engine type classification, representing a 2.5-liter 4-cylinder engine.")
+
+;;; Car Instance for a Specific Toyota RAV4 Year Model
+(isa Toyota-RAV4-2023 Car)
+(comment Toyota-RAV4-2023 "A car model by Toyota, known for its reliability, fuel efficiency, and versatility.")
+
+;;; Transmission Type
+(isa Automatic Transmission)
+(comment Automatic "Automatic represents the automatic transmission type in cars.")
+
+;;; Color Classification
+(isa Silver Color)
+(comment Silver "Silver represents the color classification for cars.")
+
+;;; Assuming the Toyota RAV4 2023 specifications as provided before:
+(yearOfManufacture Toyota-RAV4-2023 2023)
+(colorOfCar Toyota-RAV4-2023 Silver)
+(cargoVolume Toyota-RAV4-2023 37.6)
+(carLength Toyota-RAV4-2023 180.9)
+(carHeight Toyota-RAV4-2023 67)
+(carWidth Toyota-RAV4-2023 73)
+(mainEngine Toyota-RAV4-2023 RAV4-Standard-Engine)
+(carTransmission Toyota-RAV4-2023 Automatic)
+
+;;; Engine-Specific Details for RAV4 Standard Engine
+(engineHP RAV4-Standard-Engine 203)
+(engineAccelerationMph RAV4-Standard-Engine 8.0)
+(engineTopSpeedMph RAV4-Standard-Engine 130)
+(engineTorqueNm RAV4-Standard-Engine 243)
+(engineFuelCapacityGl RAV4-Standard-Engine 14.5)
+(engineCityFuelEconomyMpg RAV4-Standard-Engine 28)
+(engineHighwayFuelEconomyMpg RAV4-Standard-Engine 35)
+(engineTypeOf RAV4-Standard-Engine 2.5L-4-Cylinder)
+
+
+
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+
+
+
+(in-microtheory CarWorldMt)
+
+;;; Car Model Definition for Honda CR-V
+(isa Honda-CR-V-Model CarModel)
+(comment Honda-CR-V-Model "Honda-CR-V-Model represents a specific model of Honda CR-V cars.")
+
+;;; Car Engine Definition for Honda CR-V Standard Engine
+(isa CR-V-Standard-Engine CarEngine)
+(comment CR-V-Standard-Engine "CR-V-Standard-Engine represents a specific type of engine used in Honda CR-V cars.")
+
+;;; Engine Type Classification for Honda CR-V Engine
+(isa 1.5L-Turbocharged-4-Cylinder EngineType)
+(comment 1.5L-Turbocharged-4-Cylinder "1.5L-Turbocharged-4-Cylinder is an engine type classification, representing a 1.5-liter turbocharged 4-cylinder engine.")
+
+;;; Car Instance for a Specific Honda CR-V Year Model
+(isa Honda-CR-V-2023 Car)
+(comment Honda-CR-V-2023 "A car model by Honda, known for its space, comfort, and fuel efficiency.")
+
+;;; Transmission Type
+(isa CVT Transmission)
+(comment CVT "CVT (Continuously Variable Transmission) represents the CVT transmission type in cars.")
+
+;;; Color Classification
+(isa Blue Color)
+(comment Blue "Blue represents the color classification for cars.")
+
+;;; Assuming the Honda CR-V 2023 specifications:
+(yearOfManufacture Honda-CR-V-2023 2023)
+(colorOfCar Honda-CR-V-2023 Blue)
+(cargoVolume Honda-CR-V-2023 39.2) ; Assuming 39.2 cubic feet behind the second row
+(carLength Honda-CR-V-2023 182.1) ; Length in inches
+(carHeight Honda-CR-V-2023 66.1) ; Height in inches
+(carWidth Honda-CR-V-2023 73.0) ; Width in inches including mirrors
+(mainEngine Honda-CR-V-2023 CR-V-Standard-Engine)
+(carTransmission Honda-CR-V-2023 CVT)
+
+;;; Engine-Specific Details for CR-V Standard Engine
+(engineHP CR-V-Standard-Engine 190) ; Assuming 190 horsepower for the turbocharged engine
+(engineAccelerationMph CR-V-Standard-Engine 7.8) ; Assuming approximately 7.8 seconds for 0-60 mph
+(engineTopSpeedMph CR-V-Standard-Engine 125) ; Assuming a top speed of around 125 mph
+(engineTorqueNm CR-V-Standard-Engine 243) ; Assuming 243 Nm torque
+(engineFuelCapacityGl CR-V-Standard-Engine 14.0) ; Assuming a fuel capacity of 14.0 gallons
+(engineCityFuelEconomyMpg CR-V-Standard-Engine 28) ; Assuming 28 mpg in city
+(engineHighwayFuelEconomyMpg CR-V-Standard-Engine 34) ; Assuming 34 mpg on highway
+(engineTypeOf CR-V-Standard-Engine 1.5L-Turbocharged-4-Cylinder)
+
+
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+
+
+(in-microtheory CarWorldMt)
+
+;;; Car Model Definition for Tesla Model Y
+(isa Tesla-Model-Y-Model CarModel)
+(comment Tesla-Model-Y-Model "Tesla-Model-Y-Model represents a specific model of Tesla Model Y cars.")
+
+;;; Electric Motor Definition for Tesla Model Y
+(isa Model-Y-Dual-Motor CarEngine)
+(comment Model-Y-Dual-Motor "Model-Y-Dual-Motor represents the dual electric motor used in Tesla Model Y cars.")
+
+;;; Electric Motor Type Classification for Tesla Model Y
+(isa Dual-Motor-All-Wheel-Drive EngineType)
+(comment Dual-Motor-All-Wheel-Drive "Dual-Motor-All-Wheel-Drive is a motor type classification, representing the all-wheel drive system powered by two electric motors in the Tesla Model Y.")
+
+;;; Car Instance for a Specific Tesla Model Y Year Model
+(isa Tesla-Model-Y-2021 Car)
+(comment Tesla-Model-Y-2021 "A car model by Tesla, known for its electric powertrain, performance, and technology features.")
+
+;;; Transmission Type (Note: Electric vehicles like Tesla Model Y do not have traditional transmissions)
+(isa Single-Speed Transmission)
+(comment Single-Speed "Single-Speed represents the single-speed transmission type in electric cars.")
+
+;;; Color Classification
+(isa Red Color)
+(comment Red "Red represents the color classification for cars.")
+
+;;; Assuming the Tesla Model Y 2021 specifications:
+(yearOfManufacture Tesla-Model-Y-2021 2021)
+(colorOfCar Tesla-Model-Y-2021 Red)
+(cargoVolume Tesla-Model-Y-2021 68) ; Total cargo volume in cubic feet
+(carLength Tesla-Model-Y-2021 187) ; Length in inches
+(carHeight Tesla-Model-Y-2021 63.9) ; Height in inches
+(carWidth Tesla-Model-Y-2021 75.6) ; Width in inches including mirrors
+(mainEngine Tesla-Model-Y-2021 Model-Y-Dual-Motor)
+(carTransmission Tesla-Model-Y-2021 Single-Speed)
+
+;;; Motor-Specific Details for Model Y Dual Motor
+(EngineHP Model-Y-Dual-Motor 384) ; Combined horsepower of the dual motors
+(EngineAccelerationSec Model-Y-Dual-Motor 4.8) ; 0-60 mph in seconds
+(EngineTopSpeedMph Model-Y-Dual-Motor 135) ; Top speed in mph
+(EngineRangeMiles Model-Y-Dual-Motor 326) ; Estimated range in miles
+(EngineTypeOf Model-Y-Dual-Motor Dual-Motor-All-Wheel-Drive)
+
+
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+(in-microtheory CarWorldMt)
+
+;;; Car Model Definition for Audi Q7
+(isa Audi-Q7-Model CarModel)
+(comment Audi-Q7-Model "Audi-Q7-Model represents a specific model of Audi Q7 cars.")
+
+;;; Car Engine Definition for Audi Q7
+(isa Q7-3L-TFSI-V6 CarEngine)
+(comment Q7-3L-TFSI-V6 "Q7-3L-TFSI-V6 represents a 3.0-liter TFSI V6 engine used in Audi Q7 cars.")
+
+;;; Engine Type Classification for Audi Q7 Engine
+(isa 3L-TFSI-V6 EngineType)
+(comment 3L-TFSI-V6 "3L-TFSI-V6 is an engine type classification, representing a 3.0-liter turbocharged fuel stratified injection V6 engine.")
+
+;;; Car Instance for a Specific Audi Q7 Year Model
+(isa Audi-Q7-2019 Car)
+(comment Audi-Q7-2019 "A car model by Audi, known for its luxury, spaciousness, and performance.")
+
+;;; Transmission Type
+(isa 8-Speed-Automatic Transmission)
+(comment 8-Speed-Automatic "8-Speed-Automatic represents the automatic transmission type with 8 speeds in cars.")
+
+;;; Color Classification
+(isa Black Color)
+(comment Black "Black represents the color classification for cars.")
+
+;;; Assuming the Audi Q7 2019 specifications:
+(yearOfManufacture Audi-Q7-2019 2019)
+(colorOfCar Audi-Q7-2019 Black)
+(cargoVolume Audi-Q7-2019 69.6) ; Assuming 69.6 cubic feet with the second and third rows folded
+(carLength Audi-Q7-2019 199.6) ; Length in inches
+(carHeight Audi-Q7-2019 68.5) ; Height in inches
+(carWidth Audi-Q7-2019 77.5) ; Width in inches including mirrors
+(mainEngine Audi-Q7-2019 Q7-3L-TFSI-V6)
+(carTransmission Audi-Q7-2019 8-Speed-Automatic)
+
+;;; Engine-Specific Details for Q7 3L TFSI V6
+(engineHP Q7-3L-TFSI-V6 329) ; Assuming 329 horsepower
+(engineAccelerationMph Q7-3L-TFSI-V6 5.7) ; 0-60 mph in seconds
+(engineTopSpeedMph Q7-3L-TFSI-V6 155) ; Top speed in mph (electronically limited)
+(engineTorqueNm Q7-3L-TFSI-V6 440) ; Assuming 440 Nm torque
+(engineFuelCapacityGl Q7-3L-TFSI-V6 22.5) ; Assuming a fuel capacity of 22.5 gallons
+(engineCityFuelEconomyMpg Q7-3L-TFSI-V6 19) ; Assuming 19 mpg in city
+(engineHighwayFuelEconomyMpg Q7-3L-TFSI-V6 25) ; Assuming 25 mpg on highway
+(engineTypeOf Q7-3L-TFSI-V6 3L-TFSI-V6)
+
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+(in-microtheory CarWorldMt)
+
+;;; Car Model Definition for Dodge Challenger
+(isa Dodge-Challenger-Model CarModel)
+(comment Dodge-Challenger-Model "Dodge-Challenger-Model represents a specific model of Dodge Challenger cars.")
+
+;;; Car Engine Definition for Dodge Challenger
+(isa Challenger-Hemi-V8 CarEngine)
+(comment Challenger-Hemi-V8 "Challenger-Hemi-V8 represents a specific type of HEMI V8 engine used in Dodge Challenger cars.")
+
+;;; Engine Type Classification for Dodge Challenger Engine
+(isa Hemi-V8 EngineType)
+(comment Hemi-V8 "Hemi-V8 is an engine type classification, representing a HEMI 8-cylinder engine.")
+
+;;; Car Instance for a Specific Dodge Challenger Year Model
+(isa Dodge-Challenger-2023 Car)
+(comment Dodge-Challenger-2023 "A car model by Dodge, known for its powerful performance and muscle car aesthetics.")
+
+;;; Transmission Type
+(isa Manual Transmission)
+(comment Manual "Manual represents the manual transmission type in cars.")
+
+;;; Color Classification
+(isa Black Color)
+(comment Black "Black represents the color classification for cars.")
+
+;;; Assuming the Dodge Challenger 2023 specifications:
+(yearOfManufacture Dodge-Challenger-2023 2023)
+(colorOfCar Dodge-Challenger-2023 Black)
+(cargoVolume Dodge-Challenger-2023 16.2) ; Assuming 16.2 cubic feet trunk space
+(carLength Dodge-Challenger-2023 197.9) ; Length in inches
+(carHeight Dodge-Challenger-2023 57.5) ; Height in inches
+(carWidth Dodge-Challenger-2023 75.7) ; Width in inches including mirrors
+(mainEngine Dodge-Challenger-2023 Challenger-Hemi-V8)
+(carTransmission Dodge-Challenger-2023 Manual)
+
+;;; Engine-Specific Details for Challenger Hemi V8
+(engineHP Challenger-Hemi-V8 485) ; Assuming 485 horsepower for a specific Hemi V8 model
+(engineAccelerationMph Challenger-Hemi-V8 4.3) ; Assuming 4.3 seconds for 0-60 mph
+(engineTopSpeedMph Challenger-Hemi-V8 182) ; Assuming 182 mph as top speed
+(engineTorqueNm Challenger-Hemi-V8 644) ; Assuming 644 Nm torque
+(engineFuelCapacityGl Challenger-Hemi-V8 18.5) ; Assuming 18.5 gallons fuel capacity
+(engineCityFuelEconomyMpg Challenger-Hemi-V8 15) ; Assuming 15 mpg in city
+(engineHighwayFuelEconomyMpg Challenger-Hemi-V8 24) ; Assuming 24 mpg on highway
+(engineTypeOf Challenger-Hemi-V8 Hemi-V8)
+
+
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+(in-microtheory CarWorldMt)
+
+;;; Car Model Definition for Ferrari 250 GTO
+(isa Ferrari-250-GTO-Model CarModel)
+(comment Ferrari-250-GTO-Model "Ferrari 250 GTO Model represents the iconic racing and road car produced by Ferrari during the early 1960s.")
+
+;;; Car Engine Definition for Ferrari 250 GTO
+(isa GTO-V12-Engine CarEngine)
+(comment GTO-V12-Engine "GTO-V12-Engine represents the 3.0L V12 engine used in the Ferrari 250 GTO.")
+
+;;; Engine Type Classification for Ferrari 250 GTO Engine
+(isa V12 EngineType)
+(comment V12 "V12 is an engine type classification, representing a 12-cylinder engine arranged in a V configuration.")
+
+;;; Car Instance for a Specific Ferrari 250 GTO
+(isa Ferrari-250-GTO-1962 Car)
+(comment Ferrari-250-GTO-1962 "A specific model of the Ferrari 250 GTO, known for its racing heritage and as a collector's piece.")
+
+;;; Transmission Type
+(isa Manual Transmission)
+(comment Manual "Manual represents the manual transmission type with 5 speeds in the Ferrari 250 GTO.")
+
+;;; Color Classification
+(isa Red Color)
+(comment Red "Red represents the iconic color classification often associated with Ferrari cars.")
+
+;;; Assuming the Ferrari 250 GTO 1962 specifications:
+(yearOfManufacture Ferrari-250-GTO-1962 1962)
+(colorOfCar Ferrari-250-GTO-1962 Red)
+(carLength Ferrari-250-GTO-1962 173.2) ; Length in inches
+(carHeight Ferrari-250-GTO-1962 47.0) ; Height in inches
+(carWidth Ferrari-250-GTO-1962 70.9) ; Width in inches
+(mainEngine Ferrari-250-GTO-1962 GTO-V12-Engine)
+(carTransmission Ferrari-250-GTO-1962 Manual)
+
+;;; Engine-Specific Details for GTO V12 Engine
+(engineHP GTO-V12-Engine 296) ; Assuming 296 horsepower
+(engineAccelerationMph GTO-V12-Engine 6.1) ; Acceleration times not typically documented for classic cars
+(engineTopSpeedMph GTO-V12-Engine 174) ; Assuming 174 mph as top speed
+(engineTorqueNm GTO-V12-Engine 294) ; Torque figures not commonly specified for vintage engines
+(engineFuelCapacityGl GTO-V12-Engine 22.7) ; Assuming 22.7 gallons fuel capacity
+(engineTypeOf GTO-V12-Engine V12)
+
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+
+
+;;;; ---------------------------------------------------------------------------
+;;;; FICTIONAL CARS
+;;;; ---------------------------------------------------------------------------
+
+(in-microtheory CarWorldMt)
+
+;;; Car Model Definition for The Dark Knight Batmobile
+(isa Batmobile-Model CarModel)
+(comment Batmobile-Model "Batmobile-Model represents the specific model of Batmobile featured in The Dark Knight, equipped with advanced technology and armor for combat and high-speed pursuit capabilities.")
+
+;;; Engine Definition for The Dark Knight Batmobile
+(isa Batmobile-Jet-Engine CarEngine)
+(comment Batmobile-Jet-Engine "Batmobile-Jet-Engine represents the jet engine propulsion system used in The Dark Knight's Batmobile, enabling high-speed pursuits and rapid acceleration.")
+
+;;; Engine Type Classification for The Dark Knight Batmobile
+(isa Jet-Engine EngineType)
+(comment Jet-Engine "Jet-Engine is an engine type classification, representing the jet engine propulsion used in The Dark Knight's Batmobile, distinct from traditional automotive engines.")
+
+;;; Car Instance for The Dark Knight Batmobile
+(isa Batmobile-Dark-Knight Car)
+(comment Batmobile-Dark-Knight "A highly advanced vehicle used by Batman in The Dark Knight, featuring armor plating, advanced weaponry, high-speed jet engine propulsion, and various defensive and offensive capabilities to combat crime in Gotham City.")
+
+;;; Transmission Type
+(isa Advanced-Automatic Transmission)
+(comment Advanced-Automatic "Advanced-Automatic represents the fictional advanced automatic transmission system in The Dark Knight's Batmobile, capable of handling the extreme power and torque from the jet engine.")
+
+;;; Color Classification
+(isa Black Color)
+(comment Black "Black represents the color classification for The Dark Knight's Batmobile, aligning with Batman's theme and stealth requirements.")
+
+;;; Specifications for The Dark Knight Batmobile
+(yearOfManufacture Batmobile-Dark-Knight 2008) ; Assuming the year the movie was released
+(colorOfCar Batmobile-Dark-Knight Black)
+(cargoVolume Batmobile-Dark-Knight NA) ; Not applicable or not provided
+(carLength Batmobile-Dark-Knight NA) ; Length in inches, not specified
+(carHeight Batmobile-Dark-Knight NA) ; Height in inches, not specified
+(carWidth Batmobile-Dark-Knight NA) ; Width in inches, not specified
+(mainEngine Batmobile-Dark-Knight Batmobile-Jet-Engine)
+(carTransmission Batmobile-Dark-Knight Advanced-Automatic)
+
+;;; Engine-Specific Details for Batmobile Jet Engine
+(engineHP Batmobile-Jet-Engine 1500) ; Assuming fictional 1500 horsepower
+(engineAccelerationSec Batmobile-Jet-Engine 2.5) ; 0-60 mph in seconds, estimated for dramatic effect
+(engineTopSpeedMph Batmobile-Jet-Engine 350) ; Top speed in mph, estimated for dramatic effect
+(engineTorqueNm Batmobile-Jet-Engine NA) ; Not applicable or not provided
+(engineFuelCapacityGl Batmobile-Jet-Engine NA) ; Not applicable for a jet engine
+(engineCityFuelEconomyMpg Batmobile-Jet-Engine NA) ; Not applicable for a jet engine
+(engineHighwayFuelEconomyMpg Batmobile-Jet-Engine NA) ; Not applicable for a jet engine
+(engineTypeOf Batmobile-Jet-Engine Jet-Engine)
+
+
+(in-microtheory CarWorldMt)
+
+;;; Car Model Definition for Blade Runner 2049 Spinner
+(isa Spinner-Model CarModel)
+(comment Spinner-Model "Spinner-Model represents the specific model of flying cars used in Blade Runner 2049 for transportation and patrol, capable of VTOL and horizontal flight.")
+
+;;; Engine Definition for Blade Runner 2049 Spinner
+(isa Spinner-VTOL-Engine CarEngine)
+(comment Spinner-VTOL-Engine "Spinner-VTOL-Engine represents the advanced propulsion system used in Spinners, allowing for vertical takeoff and landing (VTOL) as well as horizontal flight.")
+
+;;; Engine Type Classification for Blade Runner 2049 Spinner
+(isa Advanced-Propulsion EngineType)
+(comment Advanced-Propulsion "Advanced-Propulsion is an engine type classification, representing the futuristic propulsion technologies that enable Spinners to fly and hover.")
+
+;;; Car Instance for the Blade Runner 2049 Spinner
+(isa Spinner-Blade-Runner-2049 Car)
+(comment Spinner-Blade-Runner-2049 "A highly advanced flying vehicle featured in Blade Runner 2049, equipped with VTOL capabilities, autonomous flight modes, and used for various purposes in the film's dystopian future.")
+
+;;; Transmission Type (Note: Given the Spinner's unique propulsion, the concept of a traditional transmission is not applicable)
+(isa Futuristic-Transmission Transmission)
+(comment Futuristic-Transmission "Futuristic-Transmission represents the advanced control systems that manage the Spinner's flight and propulsion mechanisms, far beyond traditional automotive transmissions.")
+
+;;; Color Classification
+(isa Futuristic-Design Color)
+(comment Futuristic-Design "Futuristic-Design represents the color and aesthetic classification for Spinners, embodying the high-tech and dystopian design ethos of Blade Runner 2049.")
+
+;;; Specifications for the Blade Runner 2049 Spinner
+(yearOfManufacture Spinner-Blade-Runner-2049 2049) ; The fictional year of the movie setting
+(colorOfCar Spinner-Blade-Runner-2049 Futuristic-Design)
+(cargoVolume Spinner-Blade-Runner-2049 NA) ; Not specified, given the fictional nature
+(carLength Spinner-Blade-Runner-2049 NA) ; Length, not specified
+(carHeight Spinner-Blade-Runner-2049 NA) ; Height, not specified
+(carWidth Spinner-Blade-Runner-2049 NA) ; Width, not specified
+(mainEngine Spinner-Blade-Runner-2049 Spinner-VTOL-Engine)
+(carTransmission Spinner-Blade-Runner-2049 Futuristic-Transmission)
+
+;;; Engine-Specific Details for Spinner VTOL Engine
+(engineHP Spinner-VTOL-Engine NA) ; Horsepower, not applicable in the traditional sense
+(engineAccelerationSec Spinner-VTOL-Engine NA) ; Acceleration, not applicable as it does not accelerate in a traditional manner
+(engineTopSpeedMph Spinner-VTOL-Engine NA) ; Top speed, not specified in the movie
+(engineTorqueNm Spinner-VTOL-Engine NA) ; Torque, not applicable in the traditional sense
+(engineFuelCapacityGl Spinner-VTOL-Engine NA) ; Fuel capacity, not specified, considering futuristic energy sources
+(engineCityFuelEconomyMpg Spinner-VTOL-Engine NA) ; Not applicable for a flying vehicle
+(engineHighwayFuelEconomyMpg Spinner-VTOL-Engine NA) ; Not applicable for a flying vehicle
+(engineTypeOf Spinner-VTOL-Engine Advanced-Propulsion)
+
+
