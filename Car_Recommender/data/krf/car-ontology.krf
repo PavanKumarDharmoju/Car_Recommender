@@ -190,5 +190,8 @@ fuel economy in highway driving conditions, measured in mpg.")
 (isa VTOL Collection)
 (genls VTOL Car)
 
+(isa MuscleCar Collection)
+(genls MuscleCar Car)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; End of Code
