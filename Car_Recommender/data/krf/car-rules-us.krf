@@ -1,0 +1,44 @@
+;;;; -*-  Mode: LISP; Syntax: Common-Lisp; Base: 10                          -*-
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+(in-microtheory CarWorldMt)
+
+(isa CarRulesUS Microtheory)
+(comment CarRulesUS "CarRulesUS is a microtheory to define hornclauses related to car categories in the Unites States.")
+
+(genlMt CarRulesUS CarWorldMt)
+
+;;; LuxurySUV
+"(<== (isa ?car LuxurySUV)
+(numberOfDoors ?car ?doors) (greaterThan ?doors 4)
+(cargoVolume ?car ?cargovol) (greaterThan ?cargovol 15)
+(carLength ?car ?length) (greaterThan ?length 180)
+(carWidth ?car ?width) (greaterThan ?width 60)
+(carHeight ?car ?height) (greaterThan ?height 65)
+(mainEngine ?car ?engine) (engineHP ?engine ?ehp) (greaterThan ?ehp 250)
+(mainEngine ?car ?engine) (engineAcceleration62 ?engine ?eam) (lessThan ?eam 7)
+(mainEngine ?car ?engine) (engineTopSpeedMph ?engine ?etsm) (greaterThan ?etsm 120)
+(mainEngine ?car ?engine) (engineTorqueNm ?engine ?etn) (greaterThan ?etn 300)
+(mainEngine ?car ?engine) (engineFuelCapacityGl ?engine ?efcg)
+(mainEngine ?car ?engine) (engineCityFuelEconomyMpg ?engine ?ecfem) (greaterThan ?ecfem 10)
+(mainEngine ?car ?engine) (engineHighwayFuelEconomyMpg ?engine ?ehfem) (greaterThan ?ehfem 10)
+(mainEngine ?car ?engine) (engineCO2Emission ?engine ?ecoe)
+)"
+
+;;; Compact SUV
+"(<== (isa ?car CompactSUV)
+(cargoVolume ?car ?cargovol) (greaterThan ?cargovol 15)
+(carLength ?car ?length) (and (greaterThan ?length 170) (lessThan ?length 190))
+(carWidth ?car ?width) (greaterThan ?width 70)
+(carHeight ?car ?height) (greaterThan ?height 60)
+(mainEngine ?car ?engine) (engineHP ?engine ?ehp) (greaterThan ?ehp 150)
+(mainEngine ?car ?engine) (engineAcceleration62 ?engine ?eam) (lessThan ?eam 10)
+(mainEngine ?car ?engine) (engineTopSpeedMph ?engine ?etsm) (greaterThan ?etsm 100)
+(mainEngine ?car ?engine) (engineTorqueNm ?engine ?etn) (greaterThan ?etn 200)
+(mainEngine ?car ?engine) (engineFuelCapacityGl ?engine ?efcg) (greaterThan ?efcg 10)
+(mainEngine ?car ?engine) (engineCityFuelEconomyMpg ?engine ?ecfem) (greaterThan ?ecfem 20)
+(mainEngine ?car ?engine) (engineHighwayFuelEconomyMpg ?engine ?ehfem) (greaterThan ?ehfem 25)
+(mainEngine ?car ?engine) (engineCO2Emission ?engine ?ecoe) (lessThan ?ecoe 250)
+(carTransmission ?car ?transmission)
+)"

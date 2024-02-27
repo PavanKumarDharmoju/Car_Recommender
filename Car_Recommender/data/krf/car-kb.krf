@@ -90,8 +90,7 @@
 (engineCityFuelEconomyMpg RAV4-Standard-Engine 28)
 (engineHighwayFuelEconomyMpg RAV4-Standard-Engine 35)
 (engineTypeOf RAV4-Standard-Engine 2.5L-4-Cylinder)
-
-
+(engineCO2Emission RAV4-Standard-Engine 199)
 
 ;;;; ---------------------------------------------------------------------------
 
@@ -139,6 +138,7 @@
 (engineCityFuelEconomyMpg CR-V-Standard-Engine 28) ; Assuming 28 mpg in city
 (engineHighwayFuelEconomyMpg CR-V-Standard-Engine 34) ; Assuming 34 mpg on highway
 (engineTypeOf CR-V-Standard-Engine 1.5L-Turbocharged-4-Cylinder)
+(engineCO2Emission CR-V-Standard-Engine 134)
 
 
 ;;;; ---------------------------------------------------------------------------
@@ -184,6 +184,8 @@
 (EngineTopSpeedMph Model-Y-Dual-Motor 135) ; Top speed in mph
 (EngineRangeMiles Model-Y-Dual-Motor 326) ; Estimated range in miles
 (EngineTypeOf Model-Y-Dual-Motor Dual-Motor-All-Wheel-Drive)
+;;; !!! MISSING - engineTorqueNm
+;;; !!! MISSING - needs a predicate that states that engine is electric
 
 
 ;;;; ---------------------------------------------------------------------------

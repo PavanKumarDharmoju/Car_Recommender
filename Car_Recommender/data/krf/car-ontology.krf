@@ -173,5 +173,22 @@ fuel economy in highway driving conditions, measured in mpg.")
 (arg1Isa carTransmission Car)
 (arg2Isa carTransmission Transmission)
 
+
+;;;;;;;;;;;;;;;;; Car Rule Collections ;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(isa LuxurySUV Collection)
+(genls LuxurySUV Car)
+
+(isa CompactSUV Collection)
+(genls CompactSUV Car)
+
+(isa SportsCar Collection)
+(genls SportsCar Car)
+
+(isa OffRoad Collection)
+(genls OffRoad Car)
+
+(isa VTOL Collection)
+(genls VTOL Car)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; End of Code
