@@ -335,6 +335,938 @@
 
 
 
+(isa BMW-3-Series CarModel)
+(comment BMW-3-Series "BMW-3-Series represents a specific model of BMW cars, known for its blend of luxury, performance, and efficiency.")
+
+(isa BMW-2L-Turbo-I4 CarEngine)
+(comment BMW-2L-Turbo-I4 "BMW-2L-Turbo-I4 represents a specific type of engine used in BMW 3 Series cars.")
+
+(isa 2L-Turbo-I4 EngineType)
+(comment 2L-Turbo-I4 "2L-Turbo-I4 is an engine type classification, representing a 2-liter turbocharged inline-4 engine.")
+
+(isa BMW-330i-2023 Car)
+(comment BMW-330i-2023 "A car model in the BMW 3 Series, known for its sporty performance and luxury.")
+
+(isa Automatic Transmission)
+(comment Automatic "Automatic represents the automatic transmission type in cars.")
+
+(isa Blue Color)
+
+;;; Car-Specific Details - BMW 330i
+(yearOfManufacture BMW-330i-2023 2023)
+(colorOfCar BMW-330i-2023 Blue)
+(cargoVolume BMW-330i-2023 17) ; Assuming 17 cubic feet
+(carLength BMW-330i-2023 185.7)
+(carHeight BMW-330i-2023 56.8)
+(carWidth BMW-330i-2023 71.9)
+(mainEngine BMW-330i-2023 BMW-2L-Turbo-I4)
+
+;;; Engine-Specific Details - BMW-2L-Turbo-I4
+(engineHP BMW-2L-Turbo-I4 255) ; Assuming 255 HP
+(engineAcceleration62 BMW-2L-Turbo-I4 5.6) ; Assuming 5.6 seconds for 0-60 mph
+(engineTopSpeedMph BMW-2L-Turbo-I4 155) ; Assuming 155 mph as top speed (limited)
+(engineTorqueNm BMW-2L-Turbo-I4 400) ; Assuming 400 Nm torque
+(engineFuelCapacityGl BMW-2L-Turbo-I4 15.6) ; Assuming 15.6 gallons fuel capacity
+(engineCityFuelEconomyMpg BMW-2L-Turbo-I4 26) ; Assuming 26 mpg in city
+(engineHighwayFuelEconomyMpg BMW-2L-Turbo-I4 36) ; Assuming 36 mpg on highway
+(engineTypeOf BMW-2L-Turbo-I4 2L-Turbo-I4)
+
+(engineCO2Emission BMW-2L-Turbo-I4 164) ; Assuming 164 g/km CO2 emission based on average values
+(carTransmission BMW-330i-2023 Automatic)
+
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+(isa Chevrolet-Camaro-SS CarModel)
+(comment Chevrolet-Camaro-SS "Chevrolet-Camaro-SS represents a specific model of Chevrolet cars, known for its high performance and iconic design.")
+
+(isa Chevy-6.2L-V8 CarEngine)
+(comment Chevy-6.2L-V8 "Chevy-6.2L-V8 represents the 6.2-liter V8 engine used in Chevrolet Camaro SS models.")
+
+(isa 6.2L-V8 EngineType)
+(comment 6.2L-V8 "6.2L-V8 is an engine type classification, representing a 6.2-liter V8 engine.")
+
+(isa Chevrolet-Camaro-SS-2023 Car)
+(comment Chevrolet-Camaro-SS-2023 "A high-performance car model from Chevrolet, the Camaro SS is celebrated for its powerful V8 engine.")
+
+(isa Manual Transmission)
+(comment Manual "Manual represents the manual transmission type in cars, available in the Camaro SS.")
+
+(isa Red Color)
+
+;;; Car-Specific Details - Chevrolet Camaro SS
+(yearOfManufacture Chevrolet-Camaro-SS-2023 2023)
+(colorOfCar Chevrolet-Camaro-SS-2023 Red)
+(cargoVolume Chevrolet-Camaro-SS-2023 9.1) ; Assuming 9.1 cubic feet
+(carLength Chevrolet-Camaro-SS-2023 188.3)
+(carHeight Chevrolet-Camaro-SS-2023 53.1)
+(carWidth Chevrolet-Camaro-SS-2023 74.7)
+(mainEngine Chevrolet-Camaro-SS-2023 Chevy-6.2L-V8)
+
+;;; Engine-Specific Details - Chevy-6.2L-V8
+(engineHP Chevy-6.2L-V8 455) ; Assuming 455 HP
+(engineAcceleration62 Chevy-6.2L-V8 4.0) ; Assuming 4.0 seconds for 0-60 mph
+(engineTopSpeedMph Chevy-6.2L-V8 165) ; Top speed might vary, but assuming a general figure
+(engineTorqueNm Chevy-6.2L-V8 617) ; Assuming 617 Nm torque
+(engineFuelCapacityGl Chevy-6.2L-V8 19) ; Assuming 19 gallons fuel capacity
+(engineCityFuelEconomyMpg Chevy-6.2L-V8 16) ; Assuming 16 mpg in city
+(engineHighwayFuelEconomyMpg Chevy-6.2L-V8 24) ; Assuming 24 mpg on highway
+(engineTypeOf Chevy-6.2L-V8 6.2L-V8)
+
+(engineCO2Emission Chevy-6.2L-V8 277) ; Assuming CO2 emissions based on average values for this engine type
+(carTransmission Chevrolet-Camaro-SS-2023 Manual)
+
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+(isa Mercedes-Benz-C-Class CarModel)
+(comment Mercedes-Benz-C-Class "Mercedes-Benz-C-Class represents a specific model of Mercedes-Benz cars, known for combining luxury with performance.")
+
+(isa Merc-2L-Turbo-I4 CarEngine)
+(comment Merc-2L-Turbo-I4 "Merc-2L-Turbo-I4 represents a 2-liter turbocharged inline-4 engine used in various Mercedes-Benz C-Class models.")
+
+(isa 2L-Turbo-I4 EngineType)
+(comment 2L-Turbo-I4 "2L-Turbo-I4 is an engine type classification, representing a 2-liter turbocharged inline-4 engine.")
+
+(isa Mercedes-Benz-C300-2023 Car)
+(comment Mercedes-Benz-C300-2023 "A car model in the Mercedes-Benz C-Class, the C300 blends luxury, technology, and performance.")
+
+(isa Automatic Transmission)
+(comment Automatic "Automatic represents the automatic transmission type in cars.")
+
+(isa Silver Color)
+
+;;; Car-Specific Details - Mercedes-Benz C300
+(yearOfManufacture Mercedes-Benz-C300-2023 2023)
+(colorOfCar Mercedes-Benz-C300-2023 Silver)
+(cargoVolume Mercedes-Benz-C300-2023 12.6) ; Assuming 12.6 cubic feet
+(carLength Mercedes-Benz-C300-2023 184.5)
+(carHeight Mercedes-Benz-C300-2023 56.3)
+(carWidth Mercedes-Benz-C300-2023 71.3)
+(mainEngine Mercedes-Benz-C300-2023 Merc-2L-Turbo-I4)
+
+;;; Engine-Specific Details - Merc-2L-Turbo-I4
+(engineHP Merc-2L-Turbo-I4 255) ; Assuming 255 HP
+(engineAcceleration62 Merc-2L-Turbo-I4 5.9) ; Assuming 5.9 seconds for 0-60 mph
+(engineTopSpeedMph Merc-2L-Turbo-I4 130) ; Assuming 130 mph as top speed (electronically limited)
+(engineTorqueNm Merc-2L-Turbo-I4 370) ; Assuming 370 Nm torque
+(engineFuelCapacityGl Merc-2L-Turbo-I4 17.4) ; Assuming 17.4 gallons fuel capacity
+(engineCityFuelEconomyMpg Merc-2L-Turbo-I4 24) ; Assuming 24 mpg in city
+(engineHighwayFuelEconomyMpg Merc-2L-Turbo-I4 33) ; Assuming 33 mpg on highway
+(engineTypeOf Merc-2L-Turbo-I4 2L-Turbo-I4)
+
+(engineCO2Emission Merc-2L-Turbo-I4 144) ; Assuming CO2 emissions based on average values for this engine type
+(carTransmission Mercedes-Benz-C300-2023 Automatic)
+
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+(isa Ford-Mustang-GT CarModel)
+(comment Ford-Mustang-GT "Ford-Mustang-GT represents a specific model of Ford Mustang, known for its iconic design and powerful V8 engine.")
+
+(isa Ford-5L-V8 CarEngine)
+(comment Ford-5L-V8 "Ford-5L-V8 represents the 5-liter V8 engine used in Ford Mustang GT models.")
+
+(isa 5L-V8 EngineType)
+(comment 5L-V8 "5L-V8 is an engine type classification, representing a 5-liter V8 engine.")
+
+(isa Ford-Mustang-GT-2023 Car)
+(comment Ford-Mustang-GT-2023 "A high-performance car model from Ford, the Mustang GT is renowned for its power and muscle car heritage.")
+
+(isa Manual Transmission)
+(comment Manual "Manual represents the manual transmission type in cars, a popular choice for the Mustang GT for drivers seeking a traditional driving experience.")
+
+(isa Blue Color)
+
+;;; Car-Specific Details - Ford Mustang GT
+(yearOfManufacture Ford-Mustang-GT-2023 2023)
+(colorOfCar Ford-Mustang-GT-2023 Blue)
+(cargoVolume Ford-Mustang-GT-2023 13.5) ; Assuming 13.5 cubic feet
+(carLength Ford-Mustang-GT-2023 188.5)
+(carHeight Ford-Mustang-GT-2023 54.3)
+(carWidth Ford-Mustang-GT-2023 75.4)
+(mainEngine Ford-Mustang-GT-2023 Ford-5L-V8)
+
+;;; Engine-Specific Details - Ford-5L-V8
+(engineHP Ford-5L-V8 450) ; Assuming 450 HP
+(engineAcceleration62 Ford-5L-V8 4.2) ; Assuming 4.2 seconds for 0-60 mph
+(engineTopSpeedMph Ford-5L-V8 155) ; Assuming 155 mph as top speed (electronically limited)
+(engineTorqueNm Ford-5L-V8 529) ; Assuming 529 Nm torque
+(engineFuelCapacityGl Ford-5L-V8 16) ; Assuming 16 gallons fuel capacity
+(engineCityFuelEconomyMpg Ford-5L-V8 15) ; Assuming 15 mpg in city
+(engineHighwayFuelEconomyMpg Ford-5L-V8 24) ; Assuming 24 mpg on highway
+(engineTypeOf Ford-5L-V8 5L-V8)
+
+(engineCO2Emission Ford-5L-V8 277) ; Assuming CO2 emissions based on average values for this engine type
+(carTransmission Ford-Mustang-GT-2023 Manual)
+
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+(isa Audi-A4 CarModel)
+(comment Audi-A4 "Audi-A4 represents a specific model of Audi cars, known for its blend of luxury, technology, and performance.")
+
+(isa Audi-2L-TFSI CarEngine)
+(comment Audi-2L-TFSI "Audi-2L-TFSI represents a 2-liter turbocharged fuel stratified injection (TFSI) engine used in Audi A4 models.")
+
+(isa 2L-TFSI EngineType)
+(comment 2L-TFSI "2L-TFSI is an engine type classification, representing a 2-liter turbocharged fuel stratified injection engine.")
+
+(isa Audi-A4-2023 Car)
+(comment Audi-A4-2023 "A luxury sedan in the Audi lineup, the A4 is appreciated for its advanced features, comfort, and efficient performance.")
+
+(isa Automatic Transmission)
+(comment Automatic "Automatic represents the automatic transmission type in cars.")
+
+(isa Black Color)
+
+;;; Car-Specific Details - Audi A4
+(yearOfManufacture Audi-A4-2023 2023)
+(colorOfCar Audi-A4-2023 Black)
+(cargoVolume Audi-A4-2023 13) ; Assuming 13 cubic feet
+(carLength Audi-A4-2023 186.1)
+(carHeight Audi-A4-2023 56.2)
+(carWidth Audi-A4-2023 72.5)
+(mainEngine Audi-A4-2023 Audi-2L-TFSI)
+
+;;; Engine-Specific Details - Audi-2L-TFSI
+(engineHP Audi-2L-TFSI 248) ; Assuming 248 HP
+(engineAcceleration62 Audi-2L-TFSI 5.6) ; Assuming 5.6 seconds for 0-60 mph
+(engineTopSpeedMph Audi-2L-TFSI 130) ; Assuming 130 mph as top speed (electronically limited)
+(engineTorqueNm Audi-2L-TFSI 370) ; Assuming 370 Nm torque
+(engineFuelCapacityGl Audi-2L-TFSI 15.3) ; Assuming 15.3 gallons fuel capacity
+(engineCityFuelEconomyMpg Audi-2L-TFSI 27) ; Assuming 27 mpg in city
+(engineHighwayFuelEconomyMpg Audi-2L-TFSI 34) ; Assuming 34 mpg on highway
+(engineTypeOf Audi-2L-TFSI 2L-TFSI)
+
+(engineCO2Emission Audi-2L-TFSI 143) ; Assuming CO2 emissions based on average values for this engine type
+(carTransmission Audi-A4-2023 Automatic)
+
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+(isa Dodge-Charger-RT CarModel)
+(comment Dodge-Charger-RT "Dodge-Charger-RT represents a specific model of Dodge Charger, known for its muscular appearance and powerful V8 engine.")
+
+(isa Dodge-5.7L-Hemi-V8 CarEngine)
+(comment Dodge-5.7L-Hemi-V8 "Dodge-5.7L-Hemi-V8 represents the 5.7-liter HEMI V8 engine used in Dodge Charger R/T models.")
+
+(isa 5.7L-Hemi-V8 EngineType)
+(comment 5.7L-Hemi-V8 "5.7L-Hemi-V8 is an engine type classification, representing a 5.7-liter HEMI V8 engine.")
+
+(isa Dodge-Charger-RT-2023 Car)
+(comment Dodge-Charger-RT-2023 "A performance-oriented model of the Dodge Charger, the R/T boasts a HEMI V8 engine for high power output and thrilling acceleration.")
+
+(isa Automatic Transmission)
+(comment Automatic "Automatic represents the automatic transmission type in cars.")
+
+(isa Red Color)
+
+;;; Car-Specific Details - Dodge Charger R/T
+(yearOfManufacture Dodge-Charger-RT-2023 2023)
+(colorOfCar Dodge-Charger-RT-2023 Red)
+(cargoVolume Dodge-Charger-RT-2023 16.5) ; Assuming 16.5 cubic feet
+(carLength Dodge-Charger-RT-2023 198.4)
+(carHeight Dodge-Charger-RT-2023 57.8)
+(carWidth Dodge-Charger-RT-2023 75)
+(mainEngine Dodge-Charger-RT-2023 Dodge-5.7L-Hemi-V8)
+
+;;; Engine-Specific Details - Dodge-5.7L-Hemi-V8
+(engineHP Dodge-5.7L-Hemi-V8 370) ; Assuming 370 HP
+(engineAcceleration62 Dodge-5.7L-Hemi-V8 5.2) ; Assuming 5.2 seconds for 0-60 mph
+(engineTopSpeedMph Dodge-5.7L-Hemi-V8 155) ; Assuming 155 mph as top speed (may be electronically limited)
+(engineTorqueNm Dodge-5.7L-Hemi-V8 535) ; Assuming 535 Nm torque
+(engineFuelCapacityGl Dodge-5.7L-Hemi-V8 18.5) ; Assuming 18.5 gallons fuel capacity
+(engineCityFuelEconomyMpg Dodge-5.7L-Hemi-V8 16) ; Assuming 16 mpg in city
+(engineHighwayFuelEconomyMpg Dodge-5.7L-Hemi-V8 25) ; Assuming 25 mpg on highway
+(engineTypeOf Dodge-5.7L-Hemi-V8 5.7L-Hemi-V8)
+
+(engineCO2Emission Dodge-5.7L-Hemi-V8 252) ; Assuming CO2 emissions based on average values for this engine type
+(carTransmission Dodge-Charger-RT-2023 Automatic)
+
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+(isa Maruti-Suzuki-Ciaz CarModel)
+(comment Maruti-Suzuki-Ciaz "Maruti-Suzuki-Ciaz represents a specific model of Maruti Suzuki cars, known for its spacious interior, fuel efficiency, and comfortable ride.")
+
+(isa Maruti-1.5L-Diesel CarEngine)
+(comment Maruti-1.5L-Diesel "Maruti-1.5L-Diesel represents a 1.5-liter diesel engine used in Maruti Suzuki Ciaz, offering a good balance of power and efficiency.")
+
+(isa 1.5L-Diesel EngineType)
+(comment 1.5L-Diesel "1.5L-Diesel is an engine type classification, representing a 1.5-liter diesel engine.")
+
+(isa Maruti-Suzuki-Ciaz-2023 Car)
+(comment Maruti-Suzuki-Ciaz-2023 "A sedan model from Maruti Suzuki, the Ciaz is favored for its efficiency, comfort, and practical features.")
+
+(isa Manual Transmission)
+(comment Manual "Manual represents the manual transmission type in cars, providing a direct driving experience.")
+
+(isa Silver Color)
+
+;;; Car-Specific Details - Maruti Suzuki Ciaz
+(yearOfManufacture Maruti-Suzuki-Ciaz-2023 2023)
+(colorOfCar Maruti-Suzuki-Ciaz-2023 Silver)
+(cargoVolume Maruti-Suzuki-Ciaz-2023 20.0) ; Assuming 20 cubic feet
+(carLength Maruti-Suzuki-Ciaz-2023 4490) ; in mm
+(carHeight Maruti-Suzuki-Ciaz-2023 1485) ; in mm
+(carWidth Maruti-Suzuki-Ciaz-2023 1730) ; in mm
+(mainEngine Maruti-Suzuki-Ciaz-2023 Maruti-1.5L-Diesel)
+
+;;; Engine-Specific Details - Maruti-1.5L-Diesel
+(engineHP Maruti-1.5L-Diesel 115) ; Assuming 115 HP
+(engineAcceleration62 Maruti-1.5L-Diesel 10.5) ; Assuming 10.5 seconds for 0-100 km/h
+(engineTopSpeedMph Maruti-1.5L-Diesel 110) ; Assuming 110 mph as top speed
+(engineTorqueNm Maruti-1.5L-Diesel 225) ; Assuming 225 Nm torque
+(engineFuelCapacityGl Maruti-1.5L-Diesel 13.2) ; Assuming 13.2 gallons fuel capacity
+(engineCityFuelEconomyMpg Maruti-1.5L-Diesel 14) ; Assuming 14 mpg in city
+(engineHighwayFuelEconomyMpg Maruti-1.5L-Diesel 20) ; Assuming 20 mpg on highway
+(engineTypeOf Maruti-1.5L-Diesel 1.5L-Diesel)
+
+(engineCO2Emission Maruti-1.5L-Diesel 120) ; Assuming CO2 emissions based on average values for this engine type
+(carTransmission Maruti-Suzuki-Ciaz-2023 Manual)
+
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+(isa Honda-Civic CarModel)
+(comment Honda-Civic "Honda-Civic represents a specific model of Honda cars, known for its reliability, fuel efficiency, and solid performance.")
+
+(isa Honda-1.5L-Turbo-I4 CarEngine)
+(comment Honda-1.5L-Turbo-I4 "Honda-1.5L-Turbo-I4 represents a 1.5-liter turbocharged inline-4 engine used in Honda Civic models, providing a blend of efficiency and power.")
+
+(isa 1.5L-Turbo-I4 EngineType)
+(comment 1.5L-Turbo-I4 "1.5L-Turbo-I4 is an engine type classification, representing a 1.5-liter turbocharged inline-4 engine.")
+
+(isa Honda-Civic-2023 Car)
+(comment Honda-Civic-2023 "A compact sedan by Honda, the Civic stands out for its fuel economy, driving dynamics, and technology features.")
+
+(isa CVT Transmission)
+(comment CVT "CVT represents the Continuously Variable Transmission type in cars, offering smooth acceleration without noticeable gear shifts.")
+
+(isa Blue Color)
+
+;;; Car-Specific Details - Honda Civic
+(yearOfManufacture Honda-Civic-2023 2023)
+(colorOfCar Honda-Civic-2023 Blue)
+(cargoVolume Honda-Civic-2023 15.1) ; Assuming 15.1 cubic feet
+(carLength Honda-Civic-2023 182.7) ; in inches
+(carHeight Honda-Civic-2023 55.7) ; in inches
+(carWidth Honda-Civic-2023 70.9) ; in inches
+(mainEngine Honda-Civic-2023 Honda-1.5L-Turbo-I4)
+
+;;; Engine-Specific Details - Honda-1.5L-Turbo-I4
+(engineHP Honda-1.5L-Turbo-I4 174) ; Assuming 174 HP
+(engineAcceleration62 Honda-1.5L-Turbo-I4 8.2) ; Assuming 8.2 seconds for 0-60 mph
+(engineTopSpeedMph Honda-1.5L-Turbo-I4 125) ; Assuming 125 mph as top speed
+(engineTorqueNm Honda-1.5L-Turbo-I4 260) ; Assuming 260 Nm torque
+(engineFuelCapacityGl Honda-1.5L-Turbo-I4 12.4) ; Assuming 12.4 gallons fuel capacity
+(engineCityFuelEconomyMpg Honda-1.5L-Turbo-I4 32) ; Assuming 32 mpg in city
+(engineHighwayFuelEconomyMpg Honda-1.5L-Turbo-I4 42) ; Assuming 42 mpg on highway
+(engineTypeOf Honda-1.5L-Turbo-I4 1.5L-Turbo-I4)
+
+(engineCO2Emission Honda-1.5L-Turbo-I4 110) ; Assuming CO2 emissions based on average values for this engine type
+(carTransmission Honda-Civic-2023 CVT)
+
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+(isa Hyundai-Verna CarModel)
+(comment Hyundai-Verna "Hyundai-Verna represents a specific model of Hyundai cars, known for its stylish design, comfort, and balanced performance.")
+
+(isa Hyundai-1.6L-CRDi CarEngine)
+(comment Hyundai-1.6L-CRDi "Hyundai-1.6L-CRDi represents a 1.6-liter CRDi (Common Rail Direct Injection) diesel engine used in Hyundai Verna, offering efficient and robust performance.")
+
+(isa 1.6L-CRDi EngineType)
+(comment 1.6L-CRDi "1.6L-CRDi is an engine type classification, representing a 1.6-liter common rail direct injection diesel engine.")
+
+(isa Hyundai-Verna-2023 Car)
+(comment Hyundai-Verna-2023 "A popular sedan from Hyundai, the Verna is acclaimed for its premium features, strong engine performance, and efficiency.")
+
+(isa Manual Transmission)
+(comment Manual "Manual represents the manual transmission type in cars, favored for driver engagement and control.")
+
+(isa White Color)
+
+;;; Car-Specific Details - Hyundai Verna
+(yearOfManufacture Hyundai-Verna-2023 2023)
+(colorOfCar Hyundai-Verna-2023 White)
+(cargoVolume Hyundai-Verna-2023 16.0) ; Assuming 16 cubic feet
+(carLength Hyundai-Verna-2023 4440) ; in mm
+(carHeight Hyundai-Verna-2023 1475) ; in mm
+(carWidth Hyundai-Verna-2023 1729) ; in mm
+(mainEngine Hyundai-Verna-2023 Hyundai-1.6L-CRDi)
+
+;;; Engine-Specific Details - Hyundai-1.6L-CRDi
+(engineHP Hyundai-1.6L-CRDi 128) ; Assuming 128 HP
+(engineAcceleration62 Hyundai-1.6L-CRDi 10.0) ; Assuming 10.0 seconds for 0-100 km/h
+(engineTopSpeedMph Hyundai-1.6L-CRDi 118) ; Assuming 118 mph as top speed
+(engineTorqueNm Hyundai-1.6L-CRDi 260) ; Assuming 260 Nm torque
+(engineFuelCapacityGl Hyundai-1.6L-CRDi 13.7) ; Assuming 13.7 gallons fuel capacity
+(engineCityFuelEconomyMpg Hyundai-1.6L-CRDi 15) ; Assuming 15 mpg in city
+(engineHighwayFuelEconomyMpg Hyundai-1.6L-CRDi 22) ; Assuming 22 mpg on highway
+(engineTypeOf Hyundai-1.6L-CRDi 1.6L-CRDi)
+
+(engineCO2Emission Hyundai-1.6L-CRDi 142) ; Assuming CO2 emissions based on average values for this engine type
+(carTransmission Hyundai-Verna-2023 Manual)
+
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+(isa Toyota-Camry CarModel)
+(comment Toyota-Camry "Toyota-Camry represents a specific model of Toyota cars, celebrated for its reliability, spacious interior, and efficient performance.")
+
+(isa Toyota-2.5L-Dynamic-Force CarEngine)
+(comment Toyota-2.5L-Dynamic-Force "Toyota-2.5L-Dynamic-Force represents a 2.5-liter Dynamic Force engine used in Toyota Camry, emphasizing efficiency and power.")
+
+(isa 2.5L-Dynamic-Force EngineType)
+(comment 2.5L-Dynamic-Force "2.5L-Dynamic-Force is an engine type classification, representing a 2.5-liter engine that balances power with fuel efficiency.")
+
+(isa Toyota-Camry-2023 Car)
+(comment Toyota-Camry-2023 "A midsize sedan by Toyota, the Camry is known for its comfort, safety features, and robust performance.")
+
+(isa Automatic Transmission)
+(comment Automatic "Automatic represents the automatic transmission type in cars, offering ease of use and smooth shifting.")
+
+(isa Grey Color)
+
+;;; Car-Specific Details - Toyota Camry
+(yearOfManufacture Toyota-Camry-2023 2023)
+(colorOfCar Toyota-Camry-2023 Grey)
+(cargoVolume Toyota-Camry-2023 15.1) ; Assuming 15.1 cubic feet
+(carLength Toyota-Camry-2023 192.1) ; in inches
+(carHeight Toyota-Camry-2023 56.9) ; in inches
+(carWidth Toyota-Camry-2023 72.4) ; in inches
+(mainEngine Toyota-Camry-2023 Toyota-2.)
+
+
+
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+(isa Mercedes-Benz-C-Class CarModel)
+(comment Mercedes-Benz-C-Class "Mercedes-Benz-C-Class represents a specific model of Mercedes-Benz cars, known for combining luxury with performance.")
+
+(isa Merc-2L-Turbo-I4 CarEngine)
+(comment Merc-2L-Turbo-I4 "Merc-2L-Turbo-I4 represents a 2-liter turbocharged inline-4 engine used in various Mercedes-Benz C-Class models.")
+
+(isa 2L-Turbo-I4 EngineType)
+(comment 2L-Turbo-I4 "2L-Turbo-I4 is an engine type classification, representing a 2-liter turbocharged inline-4 engine.")
+
+(isa Mercedes-Benz-C300-2023 Car)
+(comment Mercedes-Benz-C300-2023 "A car model in the Mercedes-Benz C-Class, the C300 blends luxury, technology, and performance.")
+
+(isa Automatic Transmission)
+(comment Automatic "Automatic represents the automatic transmission type in cars.")
+
+(isa Silver Color)
+
+;;; Car-Specific Details - Mercedes-Benz C300
+(yearOfManufacture Mercedes-Benz-C300-2023 2023)
+(colorOfCar Mercedes-Benz-C300-2023 Silver)
+(cargoVolume Mercedes-Benz-C300-2023 12.6) ; Assuming 12.6 cubic feet
+(carLength Mercedes-Benz-C300-2023 184.5)
+(carHeight Mercedes-Benz-C300-2023 56.3)
+(carWidth Mercedes-Benz-C300-2023 71.3)
+(mainEngine Mercedes-Benz-C300-2023 Merc-2L-Turbo-I4)
+
+;;; Engine-Specific Details - Merc-2L-Turbo-I4
+(engineHP Merc-2L-Turbo-I4 255) ; Assuming 255 HP
+(engineAcceleration62 Merc-2L-Turbo-I4 5.9) ; Assuming 5.9 seconds for 0-60 mph
+(engineTopSpeedMph Merc-2L-Turbo-I4 130) ; Assuming 130 mph as top speed (electronically limited)
+(engineTorqueNm Merc-2L-Turbo-I4 370) ; Assuming 370 Nm torque
+(engineFuelCapacityGl Merc-2L-Turbo-I4 17.4) ; Assuming 17.4 gallons fuel capacity
+(engineCityFuelEconomyMpg Merc-2L-Turbo-I4 24) ; Assuming 24 mpg in city
+(engineHighwayFuelEconomyMpg Merc-2L-Turbo-I4 33) ; Assuming 33 mpg on highway
+(engineTypeOf Merc-2L-Turbo-I4 2L-Turbo-I4)
+
+(engineCO2Emission Merc-2L-Turbo-I4 144) ; Assuming CO2 emissions based on average values for this engine type
+(carTransmission Mercedes-Benz-C300-2023 Automatic)
+
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+(isa BMW-M3 CarModel)
+(comment BMW-M3 "BMW-M3 represents a high-performance version of the BMW 3 Series, known for its powerful engine, precision handling, and aggressive styling.")
+
+(isa BMW-S58 CarEngine)
+(comment BMW-S58 "BMW-S58 represents the 3.0-liter twin-turbocharged inline-6 engine used in the BMW M3, providing exceptional power and performance.")
+
+(isa 3.0L-Twin-Turbo-I6 EngineType)
+(comment 3.0L-Twin-Turbo-I6 "3.0L-Twin-Turbo-I6 is an engine type classification, representing a 3.0-liter twin-turbocharged inline-6 engine.")
+
+(isa BMW-M3-2023 Car)
+(comment BMW-M3-2023 "The 2023 model of the BMW M3, offering cutting-edge technology, luxury, and performance tuned for enthusiasts.")
+
+(isa Automatic Transmission)
+(comment Automatic "Automatic represents the automatic transmission type in cars, including those with manual mode for enhanced driving engagement.")
+
+(isa Blue Color)
+
+;;; Car-Specific Details - BMW M3
+(yearOfManufacture BMW-M3-2023 2023)
+(colorOfCar BMW-M3-2023 Blue)
+(cargoVolume BMW-M3-2023 13) ; Assuming 13 cubic feet
+(carLength BMW-M3-2023 189.1) ; in inches
+(carHeight BMW-M3-2023 56.4) ; in inches
+(carWidth BMW-M3-2023 74.3) ; in inches
+(mainEngine BMW-M3-2023 BMW-S58)
+
+;;; Engine-Specific Details - BMW-S58
+(engineHP BMW-S58 473) ; Base model HP, Competition models offer more
+(engineAcceleration62 BMW-S58 4.1) ; Base model 0-60 mph, Competition models are faster
+(engineTopSpeedMph BMW-S58 155) ; Electronically limited, with optional M Driver's Package increasing it
+(engineTorqueNm BMW-S58 600) ; Assuming 600 Nm torque
+(engineFuelCapacityGl BMW-S58 15.6) ; Assuming 15.6 gallons fuel capacity
+(engineCityFuelEconomyMpg BMW-S58 16) ; Assuming average figures
+(engineHighwayFuelEconomyMpg BMW-S58 23) ; Assuming average figures
+(engineTypeOf BMW-S58 3.0L-Twin-Turbo-I6)
+
+(engineCO2Emission BMW-S58 234) ; Assuming CO2 emissions based on average values for this engine type
+(carTransmission BMW-M3-2023 Automatic)
+
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+(isa Dodge-Challenger-SRT-Hellcat CarModel)
+(comment Dodge-Challenger-SRT-Hellcat "Dodge-Challenger-SRT-Hellcat represents the epitome of American muscle cars, with a supercharged V8 engine and iconic design.")
+
+(isa Dodge-Supercharged-6.2L-Hemi-V8 CarEngine)
+(comment Dodge-Supercharged-6.2L-Hemi-V8 "Dodge-Supercharged-6.2L-Hemi-V8 represents the 6.2-liter supercharged HEMI V8 engine used in the Dodge Challenger SRT Hellcat, known for its incredible power output.")
+
+(isa 6.2L-Supercharged-V8 EngineType)
+(comment 6.2L-Supercharged-V8 "6.2L-Supercharged-V8 is an engine type classification, representing a 6.2-liter supercharged V8 engine.")
+
+(isa Dodge-Challenger-SRT-Hellcat-2023 Car)
+(comment Dodge-Challenger-SRT-Hellcat-2023 "The 2023 model of the Dodge Challenger SRT Hellcat, a high-performance muscle car designed for speed and power.")
+
+(isa Automatic Transmission)
+(comment Automatic "Automatic represents the automatic transmission type in cars, often equipped with manual shift modes for driver control.")
+
+(isa Red Color)
+
+;;; Car-Specific Details - Dodge Challenger SRT Hellcat
+(yearOfManufacture Dodge-Challenger-SRT-Hellcat-2023 2023)
+(colorOfCar Dodge-Challenger-SRT-Hellcat-2023 Red)
+(cargoVolume Dodge-Challenger-SRT-Hellcat-2023 16.2) ; Assuming 16.2 cubic feet
+(carLength Dodge-Challenger-SRT-Hellcat-2023 197.5) ; in inches
+(carHeight Dodge-Challenger-SRT-Hellcat-2023 57.0) ; in inches
+(carWidth Dodge-Challenger-SRT-Hellcat-2023 75.7) ; in inches
+(mainEngine Dodge-Challenger-SRT-Hellcat-2023 Dodge-Supercharged-6.2L-Hemi-V8)
+
+;;; Engine-Specific Details - Dodge-Supercharged-6.2L-Hemi-V8
+(engineHP Dodge-Supercharged-6.2L-Hemi-V8 717) ; Standard Hellcat HP, higher in Redeye and Super Stock versions
+(engineAcceleration62 Dodge-Supercharged-6.2L-Hemi-V8 3.6) ; 0-60 mph time for the standard Hellcat
+(engineTopSpeedMph Dodge-Supercharged-6.2L-Hemi-V8 199) ; Top speed varies by model and aerodynamic configuration
+(engineTorqueNm Dodge-Supercharged-6.2L-Hemi-V8 889) ; Assuming 889 Nm torque
+(engineFuelCapacityGl Dodge-Supercharged-6.2L-Hemi-V8 18.5) ; Assuming 18.5 gallons fuel capacity
+(engineCityFuelEconomyMpg Dodge-Supercharged-6.2L-Hemi-V8 13) ; Assuming average figures
+(engineHighwayFuelEconomyMpg Dodge-Supercharged-6.2L-Hemi-V8 22) ; Assuming average figures
+(engineTypeOf Dodge-Supercharged-6.2L-Hemi-V8 6.2L-Supercharged-V8)
+
+(engineCO2Emission Dodge-Supercharged-6.2L-Hemi-V8 292) ; Assuming CO2 emissions based on average values for this engine type
+(carTransmission Dodge-Challenger-SRT-Hellcat-2023 Automatic)
+
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+(isa Mercedes-AMG-C63 CarModel)
+(comment Mercedes-AMG-C63 "Mercedes-AMG-C63 represents the high-performance version of the Mercedes-Benz C-Class, equipped with a powerful V8 engine, delivering exceptional speed and handling.")
+
+(isa AMG-4.0L-V8-Biturbo CarEngine)
+(comment AMG-4.0L-V8-Biturbo "AMG-4.0L-V8-Biturbo represents the 4.0-liter V8 biturbo engine used in the Mercedes-AMG C 63, known for its explosive power and responsiveness.")
+
+(isa 4.0L-V8-Biturbo EngineType)
+(comment 4.0L-V8-Biturbo "4.0L-V8-Biturbo is an engine type classification, representing a 4.0-liter V8 engine with twin turbochargers.")
+
+(isa Mercedes-AMG-C63-2023 Car)
+(comment Mercedes-AMG-C63-2023 "The 2023 model of the Mercedes-AMG C 63, offering a blend of luxury, advanced technology, and high performance typical of AMG models.")
+
+(isa Automatic Transmission)
+(comment Automatic "Automatic represents the automatic transmission type in cars, specifically tuned for performance in AMG models.")
+
+(isa Black Color)
+
+;;; Car-Specific Details - Mercedes-AMG C 63
+(yearOfManufacture Mercedes-AMG-C63-2023 2023)
+(colorOfCar Mercedes-AMG-C63-2023 Black)
+(cargoVolume Mercedes-AMG-C63-2023 12.6) ; Assuming 12.6 cubic feet
+(carLength Mercedes-AMG-C63-2023 187.3) ; in inches
+(carHeight Mercedes-AMG-C63-2023 56.1) ; in inches
+(carWidth Mercedes-AMG-C63-2023 72.4) ; in inches
+(mainEngine Mercedes-AMG-C63-2023 AMG-4.0L-V8-Biturbo)
+
+;;; Engine-Specific Details - AMG-4.0L-V8-Biturbo
+(engineHP AMG-4.0L-V8-Biturbo 469) ; Standard model HP, with the S version offering more
+(engineAcceleration62 AMG-4.0L-V8-Biturbo 4.0) ; 0-60 mph time for the standard model
+(engineTopSpeedMph AMG-4.0L-V8-Biturbo 155) ; Electronically limited, with optional package increasing it
+(engineTorqueNm AMG-4.0L-V8-Biturbo 650) ; Assuming 650 Nm torque
+(engineFuelCapacityGl AMG-4.0L-V8-Biturbo 17.4) ; Assuming 17.4 gallons fuel capacity
+(engineCityFuelEconomyMpg AMG-4.0L-V8-Biturbo 18) ; Assuming average figures
+(engineHighwayFuelEconomyMpg AMG-4.0L-V8-Biturbo 27) ; Assuming average figures
+(engineTypeOf AMG-4.0L-V8-Biturbo 4.0L-V8-Biturbo)
+
+(engineCO2Emission AMG-4.0L-V8-Biturbo 245) ; Assuming CO2 emissions based on average values for this engine type
+(carTransmission Mercedes-AMG-C63-2023 Automatic)
+
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+(isa Chevrolet-Camaro-ZL1 CarModel)
+(comment Chevrolet-Camaro-ZL1 "Chevrolet-Camaro-ZL1 represents the pinnacle of Camaro performance, featuring a supercharged V8 engine for exceptional power and track-ready capabilities.")
+
+(isa Chevy-6.2L-Supercharged-V8 CarEngine)
+(comment Chevy-6.2L-Supercharged-V8 "Chevy-6.2L-Supercharged-V8 represents the 6.2-liter supercharged V8 engine used in the Chevrolet Camaro ZL1, delivering mind-blowing acceleration and power.")
+
+(isa 6.2L-Supercharged-V8 EngineType)
+(comment 6.2L-Supercharged-V8 "6.2L-Supercharged-V8 is an engine type classification, representing a 6.2-liter supercharged V8 engine.")
+
+(isa Chevrolet-Camaro-ZL1-2023 Car)
+(comment Chevrolet-Camaro-ZL1-2023 "The 2023 model of the Chevrolet Camaro ZL1, designed for high performance and speed, with aggressive styling and advanced aerodynamics.")
+
+(isa Manual Transmission)
+(comment Manual "Manual represents the manual transmission type in cars, offering drivers a more engaged and controlled driving experience.")
+
+(isa Red Color)
+
+;;; Car-Specific Details - Chevrolet Camaro ZL1
+(yearOfManufacture Chevrolet-Camaro-ZL1-2023 2023)
+(colorOfCar Chevrolet-Camaro-ZL1-2023 Red)
+(cargoVolume Chevrolet-Camaro-ZL1-2023 9.1) ; Assuming 9.1 cubic feet
+(carLength Chevrolet-Camaro-ZL1-2023 190.2) ; in inches
+(carHeight Chevrolet-Camaro-ZL1-2023 52.9) ; in inches
+(carWidth Chevrolet-Camaro-ZL1-2023 74.7) ; in inches
+(mainEngine Chevrolet-Camaro-ZL1-2023 Chevy-6.2L-Supercharged-V8)
+
+;;; Engine-Specific Details - Chevy-6.2L-Supercharged-V8
+(engineHP Chevy-6.2L-Supercharged-V8 650) ; Assuming 650 HP
+(engineAcceleration62 Chevy-6.2L-Supercharged-V8 3.5) ; 0-60 mph time
+(engineTopSpeedMph Chevy-6.2L-Supercharged-V8 198) ; Top speed can vary based on configuration
+(engineTorqueNm Chevy-6.2L-Supercharged-V8 881) ; Assuming 881 Nm torque
+(engineFuelCapacityGl Chevy-6.2L-Supercharged-V8 19) ; Assuming 19 gallons fuel capacity
+(engineCityFuelEconomyMpg Chevy-6.2L-Supercharged-V8 14) ; Assuming average figures
+(engineHighwayFuelEconomyMpg Chevy-6.2L-Supercharged-V8 20) ; Assuming average figures
+(engineTypeOf Chevy-6.2L-Supercharged-V8 6.2L-Supercharged-V8)
+
+(engineCO2Emission Chevy-6.2L-Supercharged-V8 290) ; Assuming CO2 emissions based on average values for this engine type
+(carTransmission Chevrolet-Camaro-ZL1-2023 Manual)
+
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+(isa Audi-R8 CarModel)
+(comment Audi-R8 "Audi-R8 represents the pinnacle of Audi's performance cars, featuring a mid-engine layout and offering a powerful V10 engine for exceptional speed and handling.")
+
+(isa Audi-5.2L-V10 CarEngine)
+(comment Audi-5.2L-V10 "Audi-5.2L-V10 represents the 5.2-liter V10 engine used in the Audi R8, known for its high power output and exhilarating sound.")
+
+(isa 5.2L-V10 EngineType)
+(comment 5.2L-V10 "5.2L-V10 is an engine type classification, representing a 5.2-liter V10 engine.")
+
+(isa Audi-R8-2023 Car)
+(comment Audi-R8-2023 "The 2023 model of the Audi R8, offering advanced technology, luxury, and supercar-level performance.")
+
+(isa Automatic Transmission)
+(comment Automatic "Automatic represents the automatic transmission type in cars, specifically tuned for high performance in models like the R8.")
+
+(isa Red Color)
+
+;;; Car-Specific Details - Audi R8
+(yearOfManufacture Audi-R8-2023 2023)
+(colorOfCar Audi-R8-2023 Red)
+(cargoVolume Audi-R8-2023 8) ; Assuming 8 cubic feet
+(carLength Audi-R8-2023 174.3) ; in inches
+(carHeight Audi-R8-2023 48.8) ; in inches
+(carWidth Audi-R8-2023 76.4) ; in inches
+(mainEngine Audi-R8-2023 Audi-5.2L-V10)
+
+;;; Engine-Specific Details - Audi-5.2L-V10
+(engineHP Audi-5.2L-V10 562) ; Standard model HP, Performance model offers more
+(engineAcceleration62 Audi-5.2L-V10 3.4) ; 0-60 mph time for the standard model
+(engineTopSpeedMph Audi-5.2L-V10 201) ; Top speed
+(engineTorqueNm Audi-5.2L-V10 550) ; Assuming 550 Nm torque
+(engineFuelCapacityGl Audi-5.2L-V10 21.9) ; Assuming 21.9 gallons fuel capacity
+(engineCityFuelEconomyMpg Audi-5.2L-V10 13) ; Assuming average figures
+(engineHighwayFuelEconomyMpg Audi-5.2L-V10 20) ; Assuming average figures
+(engineTypeOf Audi-5.2L-V10 5.2L-V10)
+
+(engineCO2Emission Audi-5.2L-V10 330) ; Assuming CO2 emissions based on average values for this engine type
+(carTransmission Audi-R8-2023 Automatic)
+
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+(isa Chevrolet-Corvette-C8 CarModel)
+(comment Chevrolet-Corvette-C8 "Chevrolet-Corvette-C8 represents a new era for the Corvette with its mid-engine layout, providing enhanced handling and performance.")
+
+(isa Chevy-6.2L-V8-LT2 CarEngine)
+(comment Chevy-6.2L-V8-LT2 "Chevy-6.2L-V8-LT2 represents the 6.2-liter V8 engine used in the Chevrolet Corvette C8, delivering powerful performance with natural aspiration.")
+
+(isa 6.2L-V8 EngineType)
+(comment 6.2L-V8 "6.2L-V8 is an engine type classification, representing a 6.2-liter V8 engine.")
+
+(isa Chevrolet-Corvette-C8-2023 Car)
+(comment Chevrolet-Corvette-C8-2023 "The 2023 model of the Chevrolet Corvette C8, marking a significant shift in design philosophy for the iconic sports car.")
+
+(isa Automatic Transmission)
+(comment Automatic "Automatic represents the automatic transmission type in cars, with a dual-clutch system in the Corvette C8 for rapid gear changes.")
+
+(isa Yellow Color)
+
+;;; Car-Specific Details - Chevrolet Corvette C8
+(yearOfManufacture Chevrolet-Corvette-C8-2023 2023)
+(colorOfCar Chevrolet-Corvette-C8-2023 Yellow)
+(cargoVolume Chevrolet-Corvette-C8-2023 12.6) ; Assuming 12.6 cubic feet combined front and rear
+(carLength Chevrolet-Corvette-C8-2023 182.3) ; in inches
+(carHeight Chevrolet-Corvette-C8-2023 48.6) ; in inches
+(carWidth Chevrolet-Corvette-C8-2023 76.1) ; in inches
+(mainEngine Chevrolet-Corvette-C8-2023 Chevy-6.2L-V8-LT2)
+
+;;; Engine-Specific Details - Chevy-6.2L-V8-LT2
+(engineHP Chevy-6.2L-V8-LT2 495) ; With performance exhaust
+(engineAcceleration62 Chevy-6.2L-V8-LT2 2.9) ; 0-60 mph time with Z51 Performance Package
+(engineTopSpeedMph Chevy-6.2L-V8-LT2 194) ; Top speed
+(engineTorqueNm Chevy-6.2L-V8-LT2 637) ; Assuming 637 Nm torque
+(engineFuelCapacityGl Chevy-6.2L-V8-LT2 18.5) ; Assuming 18.5 gallons fuel capacity
+(engineCityFuelEconomyMpg Chevy-6.2L-V8-LT2 15) ; Assuming average figures
+(engineHighwayFuelEconomyMpg Chevy-6.2L-V8-LT2 27) ; Assuming average figures
+(engineTypeOf Chevy-6.2L-V8-LT2 6.2L-V8)
+
+(engineCO2Emission Chevy-6.2L-V8-LT2 308) ; Assuming CO2 emissions based on average values for this engine type
+(carTransmission Chevrolet-Corvette-C8-2023 Automatic)
+
+
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+(isa BMW-M4 CarModel)
+(comment BMW-M4 "BMW-M4 represents the high-performance version of the BMW 4 Series coupe, known for its powerful engine, precision handling, and sporty aesthetics.")
+
+(isa BMW-S58-M4 CarEngine)
+(comment BMW-S58-M4 "BMW-S58-M4 represents the 3.0-liter twin-turbocharged inline-6 engine used in the BMW M4, offering a blend of high power output and efficiency.")
+
+(isa 3.0L-Twin-Turbo-I6 EngineType)
+(comment 3.0L-Twin-Turbo-I6 "3.0L-Twin-Turbo-I6 is an engine type classification, representing a 3.0-liter twin-turbocharged inline-6 engine.")
+
+(isa BMW-M4-Competition-2023 Car)
+(comment BMW-M4-Competition-2023 "The 2023 BMW M4 Competition model, enhancing the standard M4's capabilities with increased horsepower, improved handling, and more aggressive styling.")
+
+(isa Automatic Transmission)
+(comment Automatic "Automatic represents the automatic transmission type in cars, here referring to the M4's 8-speed M Steptronic transmission with Drivelogic.")
+
+(isa Blue Color)
+
+;;; Car-Specific Details - BMW M4 Competition
+(yearOfManufacture BMW-M4-Competition-2023 2023)
+(colorOfCar BMW-M4-Competition-2023 Blue)
+(cargoVolume BMW-M4-Competition-2023 12) ; Assuming 12 cubic feet
+(carLength BMW-M4-Competition-2023 189.1) ; in inches
+(carHeight BMW-M4-Competition-2023 54.8) ; in inches
+(carWidth BMW-M4-Competition-2023 74.3) ; in inches
+(mainEngine BMW-M4-Competition-2023 BMW-S58-M4)
+
+;;; Engine-Specific Details - BMW-S58-M4
+(engineHP BMW-S58-M4 503) ; For the Competition model
+(engineAcceleration62 BMW-S58-M4 3.8) ; 0-60 mph time for the Competition model
+(engineTopSpeedMph BMW-S58-M4 180) ; With the optional M Driver's Package
+(engineTorqueNm BMW-S58-M4 650) ; Assuming 650 Nm torque
+(engineFuelCapacityGl BMW-S58-M4 15.6) ; Assuming 15.6 gallons fuel capacity
+(engineCityFuelEconomyMpg BMW-S58-M4 16) ; Assuming average figures
+(engineHighwayFuelEconomyMpg BMW-S58-M4 23) ; Assuming average figures
+(engineTypeOf BMW-S58-M4 3.0L-Twin-Turbo-I6)
+
+(engineCO2Emission BMW-S58-M4 244) ; Assuming CO2 emissions based on average values for this engine type
+(carTransmission BMW-M4-Competition-2023 Automatic)
+
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+(isa McLaren-720S CarModel)
+(comment McLaren-720S "McLaren-720S represents a supercar that sets benchmarks in performance, offering a blend of cutting-edge technology, lightweight construction, and immense power.")
+
+(isa McLaren-M840T CarEngine)
+(comment McLaren-M840T "McLaren-M840T represents the 4.0-liter twin-turbo V8 engine used in the McLaren 720S, known for its exceptional power-to-weight ratio and performance.")
+
+(isa 4.0L-Twin-Turbo-V8 EngineType)
+(comment 4.0L-Twin-Turbo-V8 "4.0L-Twin-Turbo-V8 is an engine type classification, representing a 4.0-liter twin-turbo V8 engine.")
+
+(isa McLaren-720S-2023 Car)
+(comment McLaren-720S-2023 "The 2023 model of the McLaren 720S, showcasing McLaren's commitment to innovation, performance, and design excellence.")
+
+(isa Automatic Transmission)
+(comment Automatic "Automatic represents the automatic transmission type in cars, here referring to the 720S's 7-speed seamless-shift gearbox.")
+
+(isa Orange Color)
+
+;;; Car-Specific Details - McLaren 720S
+(yearOfManufacture McLaren-720S-2023 2023)
+(colorOfCar McLaren-720S-2023 Orange)
+(cargoVolume McLaren-720S-2023 5.3) ; Assuming 5.3 cubic feet under the hood
+(carLength McLaren-720S-2023 178.9) ; in inches
+(carHeight McLaren-720S-2023 47.1) ; in inches
+(carWidth McLaren-720S-2023 76.0) ; in inches
+(mainEngine McLaren-720S-2023 McLaren-M840T)
+
+;;; Engine-Specific Details - McLaren-M840T
+(engineHP McLaren-M840T 710) ; Horsepower output
+(engineAcceleration62 McLaren-M840T 2.9) ; 0-60 mph time
+(engineTopSpeedMph McLaren-M840T 212) ; Top speed
+(engineTorqueNm McLaren-M840T 770) ; Assuming 770 Nm torque
+(engineFuelCapacityGl McLaren-M840T 19) ; Assuming 19 gallons fuel capacity
+(engineCityFuelEconomyMpg McLaren-M840T 15) ; Assuming average figures for city driving
+(engineHighwayFuelEconomyMpg McLaren-M840T 22) ; Assuming average figures for highway driving
+(engineTypeOf McLaren-M840T 4.0L-Twin-Turbo-V8)
+
+(engineCO2Emission McLaren-M840T 276) ; Assuming CO2 emissions based on average values for this engine type
+(carTransmission McLaren-720S-2023 Automatic)
+
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+(isa Skoda-Octavia-RS CarModel)
+(comment Skoda-Octavia-RS "Skoda-Octavia-RS represents a high-performance version of the Skoda Octavia, offering a blend of speed, handling, and practicality.")
+
+(isa Skoda-2L-Turbo-I4 CarEngine)
+(comment Skoda-2L-Turbo-I4 "Skoda-2L-Turbo-I4 represents the engine used in the Skoda Octavia RS, known for its power and efficiency.")
+
+(isa 2L-Turbo-I4 EngineType)
+(comment 2L-Turbo-I4 "2L-Turbo-I4 is an engine type classification, representing a 2-liter turbocharged inline-4 engine.")
+
+(isa Skoda-Octavia-RS-2023 Car)
+(comment Skoda-Octavia-RS-2023 "A high-performance car model in the Skoda Octavia lineup, known for its dynamic driving experience.")
+
+;;; Car-Specific Details - Skoda Octavia RS
+(yearOfManufacture Skoda-Octavia-RS-2023 2023)
+(colorOfCar Skoda-Octavia-RS-2023 Grey) ; Example color
+(cargoVolume Skoda-Octavia-RS-2023 20) ; Assuming 20 cubic feet for simplicity
+(carLength Skoda-Octavia-RS-2023 4689) ; in mm
+(carHeight Skoda-Octavia-RS-2023 1465) ; in mm
+(carWidth Skoda-Octavia-RS-2023 1814) ; in mm
+(mainEngine Skoda-Octavia-RS-2023 Skoda-2L-Turbo-I4)
+
+;;; Engine-Specific Details - Skoda-2L-Turbo-I4
+(engineHP Skoda-2L-Turbo-I4 245) ; Assuming 245 HP
+(engineAcceleration62 Skoda-2L-Turbo-I4 6.6) ; Assuming 6.6 seconds for 0-60 mph
+(engineTopSpeedMph Skoda-2L-Turbo-I4 155) ; Assuming 155 mph as top speed (limited)
+(engineTorqueNm Skoda-2L-Turbo-I4 370) ; Assuming 370 Nm torque
+(engineFuelCapacityGl Skoda-2L-Turbo-I4 13.2) ; Assuming 13.2 gallons fuel capacity
+(engineCityFuelEconomyMpg Skoda-2L-Turbo-I4 29) ; Assuming 29 mpg in city
+(engineHighwayFuelEconomyMpg Skoda-2L-Turbo-I4 39) ; Assuming 39 mpg on highway
+(engineTypeOf Skoda-2L-Turbo-I4 2L-Turbo-I4)
+(engineCO2Emission Skoda-2L-Turbo-I4 149) ; Assuming 149 g/km CO2 emission based on average values
+(carTransmission Skoda-Octavia-RS-2023 Automatic)
+
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+(isa Hyundai-Tucson-Higher-Trims CarModel)
+(comment Hyundai-Tucson-Higher-Trims "Hyundai Tucson Higher Trims represent the more powerful and luxurious versions of the Hyundai Tucson SUV.")
+
+(isa Hyundai-2L-Turbo-I4 CarEngine)
+(comment Hyundai-2L-Turbo-I4 "Hyundai-2L-Turbo-I4 represents the engine used in higher trims of Hyundai Tucson, providing a balance of power and efficiency.")
+
+(isa 2L-Turbo-I4 EngineType)
+(comment 2L-Turbo-I4 "2L-Turbo-I4 is an engine type classification, representing a 2-liter turbocharged inline-4 engine.")
+
+(isa Hyundai-Tucson-2023 Car)
+(comment Hyundai-Tucson-2023 "A versatile SUV in the Hyundai lineup, offering advanced features and a comfortable ride.")
+
+;;; Car-Specific Details - Hyundai Tucson
+(yearOfManufacture Hyundai-Tucson-2023 2023)
+(colorOfCar Hyundai-Tucson-2023 Silver) ; Example color
+(cargoVolume Hyundai-Tucson-2023 31) ; Assuming 31 cubic feet for simplicity
+(carLength Hyundai-Tucson-2023 4630) ; in mm
+(carHeight Hyundai-Tucson-2023 1665) ; in mm
+(carWidth Hyundai-Tucson-2023 1865) ; in mm
+(mainEngine Hyundai-Tucson-2023 Hyundai-2L-Turbo-I4)
+
+;;; Engine-Specific Details - Hyundai-2L-Turbo-I4
+(engineHP Hyundai-2L-Turbo-I4 261) ; Assuming 261 HP for hybrid model
+(engineAcceleration62 Hyundai-2L-Turbo-I4 7.8) ; Assuming 7.8 seconds for 0-60 mph for hybrid model
+(engineTopSpeedMph Hyundai-2L-Turbo-I4 130) ; Assuming 130 mph as top speed (limited)
+(engineTorqueNm Hyundai-2L-Turbo-I4 350) ; Assuming 350 Nm torque for hybrid model
+(engineFuelCapacityGl Hyundai-2L-Turbo-I4 14.3) ; Assuming 14.3 gallons fuel capacity
+(engineCityFuelEconomyMpg Hyundai-2L-Turbo-I4 37) ; Assuming 37 mpg in city for hybrid model
+(engineHighwayFuelEconomyMpg Hyundai-2L-Turbo-I4 36) ; Assuming 36 mpg on highway for hybrid model
+(engineTypeOf Hyundai-2L-Turbo-I4 2L-Turbo-I4)
+(engineCO2Emission Hyundai-2L-Turbo-I4 158) ; Assuming 158 g/km CO2 emission based on average values for hybrid model
+(carTransmission Hyundai-Tucson-2023 Automatic)
+
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+(isa Ford-Mustang-EcoBoost CarModel)
+(comment Ford-Mustang-EcoBoost "Ford Mustang EcoBoost represents a version of the iconic Mustang that uses a turbocharged EcoBoost engine, combining performance with efficiency.")
+
+(isa Ford-2.3L-EcoBoost-I4 CarEngine)
+(comment Ford-2.3L-EcoBoost-I4 "Ford-2.3L-EcoBoost-I4 represents the turbocharged inline-4 engine used in the Ford Mustang EcoBoost, known for its power output and fuel efficiency.")
+
+(isa 2.3L-EcoBoost-I4 EngineType)
+(comment 2.3L-EcoBoost-I4 "2.3L-EcoBoost-I4 is an engine type classification, representing a 2.3-liter turbocharged inline-4 engine.")
+
+(isa Ford-Mustang-EcoBoost-2023 Car)
+(comment Ford-Mustang-EcoBoost-2023 "A sporty and efficient car model in the Ford Mustang lineup, known for its blend of performance and fuel economy.")
+
+;;; Car-Specific Details - Ford Mustang EcoBoost
+(yearOfManufacture Ford-Mustang-EcoBoost-2023 2023)
+(colorOfCar Ford-Mustang-EcoBoost-2023 Red) ; Example color
+(cargoVolume Ford-Mustang-EcoBoost-2023 13.5) ; Assuming 13.5 cubic feet
+(carLength Ford-Mustang-EcoBoost-2023 188.5) ; in inches
+(carHeight Ford-Mustang-EcoBoost-2023 54.3) ; in inches
+(carWidth Ford-Mustang-EcoBoost-2023 75.4) ; in inches
+(mainEngine Ford-Mustang-EcoBoost-2023 Ford-2.3L-EcoBoost-I4)
+
+;;; Engine-Specific Details - Ford-2.3L-EcoBoost-I4
+(engineHP Ford-2.3L-EcoBoost-I4 310) ; Assuming 310 HP
+(engineAcceleration62 Ford-2.3L-EcoBoost-I4 5.0) ; Assuming 5.0 seconds for 0-60 mph
+(engineTopSpeedMph Ford-2.3L-EcoBoost-I4 155) ; Assuming 155 mph as top speed (limited)
+(engineTorqueNm Ford-2.3L-EcoBoost-I4 475) ; Assuming 475 Nm torque
+(engineFuelCapacityGl Ford-2.3L-EcoBoost-I4 15.5) ; Assuming 15.5 gallons fuel capacity
+(engineCityFuelEconomyMpg Ford-2.3L-EcoBoost-I4 21) ; Assuming 21 mpg in city
+(engineHighwayFuelEconomyMpg Ford-2.3L-EcoBoost-I4 32) ; Assuming 32 mpg on highway
+(engineTypeOf Ford-2.3L-EcoBoost-I4 2.3L-EcoBoost-I4)
+(engineCO2Emission Ford-2.3L-EcoBoost-I4 179) ; Assuming 179 g/km CO2 emission based on average values
+(carTransmission Ford-Mustang-EcoBoost-2023 Automatic)
+
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+
+(isa Tesla-Model-3 CarModel)
+(comment Tesla-Model-3 "Tesla Model 3 represents a fully electric sedan, known for its impressive range, performance, and advanced technology.")
+
+(isa Tesla-Electric-Motor CarEngine)
+(comment Tesla-Electric-Motor "Tesla-Electric-Motor represents the electric propulsion system used in Tesla Model 3, providing instant torque and acceleration.")
+
+(isa Electric-Motor EngineType)
+(comment Electric-Motor "Electric-Motor is an engine type classification, representing the electric propulsion system used in electric vehicles.")
+
+(isa Tesla-Model-3-2023 Car)
+(comment Tesla-Model-3-2023 "A highly advanced and efficient electric car model in the Tesla lineup, known for its performance, safety, and minimal environmental impact.")
+
+;;; Car-Specific Details - Tesla Model 3
+(yearOfManufacture Tesla-Model-3-2023 2023)
+(colorOfCar Tesla-Model-3-2023 White) ; Example color
+(cargoVolume Tesla-Model-3-2023 15) ; Assuming 15 cubic feet combined front and rear
+(carLength Tesla-Model-3-2023 184.8) ; in inches
+(carHeight Tesla-Model-3-2023 56.8) ; in inches
+(carWidth Tesla-Model-3-2023 72.8) ; in inches
+(mainEngine Tesla-Model-3-2023 Tesla-Electric-Motor)
+
+;;; Engine-Specific Details - Tesla-Electric-Motor
+(engineHP Tesla-Electric-Motor 283) ; Assuming 283 HP for the Standard Range Plus version
+(engineAcceleration62 Tesla-Electric-Motor 5.3) ; Assuming 5.3 seconds for 0-60 mph for Standard Range Plus
+(engineTopSpeedMph Tesla-Electric-Motor 140) ; Assuming 140 mph as top speed for Standard Range Plus
+(engineTorqueNm Tesla-Electric-Motor 450) ; Assuming 450 Nm torque, approximated for electric motors
+(engineFuelCapacityGl Tesla-Electric-Motor NA) ; Not applicable for electric vehicles
+(engineCityFuelEconomyMpg Tesla-Electric-Motor NA) ; Not applicable for electric vehicles
+(engineHighwayFuelEconomyMpg Tesla-Electric-Motor NA) ; Not applicable for electric vehicles
+(engineTypeOf Tesla-Electric-Motor Electric-Motor)
+(engineCO2Emission Tesla-Electric-Motor 0) ; Zero emissions for electric vehicles
+(carTransmission Tesla-Model-3-2023 Automatic) ; Technically single-speed but classified as automatic for simplicity
+
+
+
+
 ;;;; ---------------------------------------------------------------------------
 ;;;; FICTIONAL CARS
 ;;;; ---------------------------------------------------------------------------
