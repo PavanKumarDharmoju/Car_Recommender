@@ -608,9 +608,9 @@
 (yearOfManufacture Maruti-Suzuki-Ciaz-2023 2023)
 (colorOfCar Maruti-Suzuki-Ciaz-2023 Silver)
 (cargoVolume Maruti-Suzuki-Ciaz-2023 20.0) ; Assuming 20 cubic feet
-(carLength Maruti-Suzuki-Ciaz-2023 4490) ; in mm
-(carHeight Maruti-Suzuki-Ciaz-2023 1485) ; in mm
-(carWidth Maruti-Suzuki-Ciaz-2023 1730) ; in mm
+(carLength Maruti-Suzuki-Ciaz-2023 177) ; in inches
+(carHeight Maruti-Suzuki-Ciaz-2023 59) ; in inches
+(carWidth Maruti-Suzuki-Ciaz-2023 69) ; in inches
 (mainEngine Maruti-Suzuki-Ciaz-2023 Maruti-1.5L-Diesel)
 
 ;;; Engine-Specific Details - Maruti-1.5L-Diesel
@@ -692,9 +692,9 @@
 (yearOfManufacture Hyundai-Verna-2023 2023)
 (colorOfCar Hyundai-Verna-2023 White)
 (cargoVolume Hyundai-Verna-2023 16.0) ; Assuming 16 cubic feet
-(carLength Hyundai-Verna-2023 4440) ; in mm
-(carHeight Hyundai-Verna-2023 1475) ; in mm
-(carWidth Hyundai-Verna-2023 1729) ; in mm
+(carLength Hyundai-Verna-2023 174.803) ; in inches
+(carHeight Hyundai-Verna-2023 58.0715) ; in inches
+(carWidth Hyundai-Verna-2023 68.110169) ; in inches
 (mainEngine Hyundai-Verna-2023 Hyundai-1.6L-CRDi)
 
 ;;; Engine-Specific Details - Hyundai-1.6L-CRDi
@@ -737,8 +737,20 @@
 (carLength Toyota-Camry-2023 192.1) ; in inches
 (carHeight Toyota-Camry-2023 56.9) ; in inches
 (carWidth Toyota-Camry-2023 72.4) ; in inches
-(mainEngine Toyota-Camry-2023 Toyota-2.)
+(mainEngine Toyota-Camry-2023 Toyota-2.5L-Dynamic-Force)
 
+;;; Engine-Specific Details - Toyota-2.5L-Dynamic-Force
+(engineHP Toyota-2.5L-Dynamic-Force 203) ; Assuming 203 HP
+(engineAcceleration62 Toyota-2.5L-Dynamic-Force 8.1) ; Assuming 8.1 seconds for 0-60 mph
+(engineTopSpeedMph Toyota-2.5L-Dynamic-Force 120) ; Assuming 120 mph as top speed
+(engineTorqueNm Toyota-2.5L-Dynamic-Force 250) ; Assuming 250 Nm torque
+(engineFuelCapacityGl Toyota-2.5L-Dynamic-Force 15.8) ; Assuming 15.8 gallons fuel capacity
+(engineCityFuelEconomyMpg Toyota-2.5L-Dynamic-Force 28) ; Assuming 28 mpg in city
+(engineHighwayFuelEconomyMpg Toyota-2.5L-Dynamic-Force 39) ; Assuming 39 mpg on highway
+(engineTypeOf Toyota-2.5L-Dynamic-Force 2.5L-Dynamic-Force)
+
+(engineCO2Emission Toyota-2.5L-Dynamic-Force 131) ; Assuming CO2 emissions based on average values for this engine type
+(carTransmission Toyota-Camry-2023 Automatic)
 
 
 ;;;; ---------------------------------------------------------------------------
@@ -1139,9 +1151,9 @@
 (yearOfManufacture Skoda-Octavia-RS-2023 2023)
 (colorOfCar Skoda-Octavia-RS-2023 Grey) ; Example color
 (cargoVolume Skoda-Octavia-RS-2023 20) ; Assuming 20 cubic feet for simplicity
-(carLength Skoda-Octavia-RS-2023 4689) ; in mm
-(carHeight Skoda-Octavia-RS-2023 1465) ; in mm
-(carWidth Skoda-Octavia-RS-2023 1814) ; in mm
+(carLength Skoda-Octavia-RS-2023 184.60679) ; in inches
+(carHeight Skoda-Octavia-RS-2023 57.67775) ; in inches
+(carWidth Skoda-Octavia-RS-2023 71.456945) ; in inches
 (mainEngine Skoda-Octavia-RS-2023 Skoda-2L-Turbo-I4)
 
 ;;; Engine-Specific Details - Skoda-2L-Turbo-I4
@@ -1175,9 +1187,9 @@
 (yearOfManufacture Hyundai-Tucson-2023 2023)
 (colorOfCar Hyundai-Tucson-2023 Silver) ; Example color
 (cargoVolume Hyundai-Tucson-2023 31) ; Assuming 31 cubic feet for simplicity
-(carLength Hyundai-Tucson-2023 4630) ; in mm
-(carHeight Hyundai-Tucson-2023 1665) ; in mm
-(carWidth Hyundai-Tucson-2023 1865) ; in mm
+(carLength Hyundai-Tucson-2023 182.2834) ; in inches
+(carHeight Hyundai-Tucson-2023 65.5515) ; in inches
+(carWidth Hyundai-Tucson-2023 73.4255) ; in inches
 (mainEngine Hyundai-Tucson-2023 Hyundai-2L-Turbo-I4)
 
 ;;; Engine-Specific Details - Hyundai-2L-Turbo-I4
