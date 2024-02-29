@@ -1,0 +1,36 @@
+;;;; -*-  Mode: LISP; Syntax: Common-Lisp; Base: 10                          -*-
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+(in-microtheory CarRulesINMt)
+(isa CarRulesINMt Microtheory)
+(comment CarRulesUS "CarRulesUS is a microtheory to define hornclauses related to car categories in the Unites States.")
+
+(genlMt CarRulesINMt CarWorldMt)
+
+
+;;; LuxurySUV
+(<== (isa ?car LuxurySUV) 
+(cargoVolume ?car ?cargovol) (greaterThan ?cargovol 12.5)
+(carLength ?car ?length) (greaterThan ?length 180)
+(carWidth ?car ?width) (greaterThan ?width 60)
+(carHeight ?car ?height) (lessThan ?height 58)
+(mainEngine ?car ?engine) (engineTopSpeedMph ?engine ?etsm) (greaterThan ?etsm 120)
+(mainEngine ?car ?engine) (engineHP ?engine ?ehp) (greaterThan ?ehp 240) (lessThan ?ehp 300)
+(mainEngine ?car ?engine) (engineAcceleration62 ?engine ?eam) (lessThan ?eam 6)
+(mainEngine ?car ?engine) (engineCityFuelEconomyMpg ?engine ?ecfem) (greaterThan ?ecfem 16)
+(mainEngine ?car ?engine) (engineHighwayFuelEconomyMpg ?engine ?ehfem) (greaterThan ?ehfem 25)
+)
+
+;;; Compact SUV
+(<== (isa ?car CompactSUV) 
+(cargoVolume ?car ?cargovol) (greaterThan ?cargovol 15)
+(carLength ?car ?length) (and (greaterThan ?length 170) (lessThan ?length 190))
+(carWidth ?car ?width) (greaterThan ?width 68)
+(carHeight ?car ?height) (greaterThan ?height 58)
+(mainEngine ?car ?engine) (engineTopSpeedMph ?engine ?etsm) (greaterThan ?etsm 100)
+(mainEngine ?car ?engine) (engineHP ?engine ?ehp) (greaterThan ?ehp 110) (lessThan ?ehp 130)
+(mainEngine ?car ?engine) (engineAcceleration62 ?engine ?eam) (greaterThan ?eam 9) (lessThan ?eam 11) 
+(mainEngine ?car ?engine) (engineTorqueNm ?engine ?etn) (greaterThan ?etn 200) (lessThan ?etn 270) 
+(mainEngine ?car ?engine) (engineCityFuelEconomyMpg ?engine ?ecfem) (greaterThan ?ecfem 13) (lessThan ?ecfem 16) 
+(mainEngine ?car ?engine) (engineHighwayFuelEconomyMpg ?engine ?ehfem) (greaterThan ?ehfem 19) (lessThan ?ehfem 23)
+)

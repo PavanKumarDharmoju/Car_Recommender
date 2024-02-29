@@ -1,0 +1,11 @@
+;;;; -*-  Mode: LISP; Syntax: Common-Lisp; Base: 10                          -*-
+;;;; ---------------------------------------------------------------------------
+;;;; ---------------------------------------------------------------------------
+(in-microtheory CarWorldMt)
+
+;;; FictionalCar
+(<== (isa ?car FictionalCar) 
+(mainEngine ?car ?engine) (engineHP ?engine ?ehp) (greaterThan ?ehp 1400)
+(mainEngine ?car ?engine) (engineAccelerationSec ?engine ?eam) (lessThan ?eam 3)
+(mainEngine ?car ?engine) (engineTorqueNm ?engine ?etn) (greaterThan ?etn 1500)
+)
