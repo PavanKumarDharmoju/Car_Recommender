@@ -34,3 +34,20 @@
 (mainEngine ?car ?engine) (engineCityFuelEconomyMpg ?engine ?ecfem) (greaterThan ?ecfem 13) (lessThan ?ecfem 16) 
 (mainEngine ?car ?engine) (engineHighwayFuelEconomyMpg ?engine ?ehfem) (greaterThan ?ehfem 19) (lessThan ?ehfem 23)
 )
+
+(<== (isa ?car HighPerformanceSportsCar)
+    (mainEngine ?car ?engine)
+    (mainEngine ?car ?engine) (engineHP ?engine ?ehp) (greaterThan ?hp 400)
+    (mainEngine ?car ?engine) (engineAcceleration62 ?engine ?accel) (lessThan ?accel 4)
+    (mainEngine ?car ?engine) (carTransmission ?car ?transmission) (equal ?transmission Manual))
+
+(<== (isa ?car EcoFriendlyCityCar)
+    (mainEngine ?car ?engine)
+    (mainEngine ?car ?engine) (engineCO2Emission ?engine ?co2) (lessThan ?co2 100)
+    (mainEngine ?car ?engine) (engineCityFuelEconomyMpg ?engine ?economy) (greaterThan ?economy 30))
+
+(<== (isa ?car CompactElectricCar)
+    (mainEngine ?car ?engine)
+    (mainEngine ?car ?engine) (isEngicElectric ?engine)
+    (mainEngine ?car ?engine) (carLength ?car ?length) (lessThan ?length 127)
+    (mainEngine ?car ?engine) (engineTopSpeedMph ?engine ?speed) (greaterThanOrEqual ?speed 60))

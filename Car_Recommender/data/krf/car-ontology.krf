@@ -106,11 +106,11 @@
 (arg1Isa engineHP CarEngine)
 (arg2Isa engineHP ScalarInterval)
 
-(isa engineAccelerationMph Predicate)
-(comment engineAccelerationMph "engineAccelerationMph relates a car engine to its acceleration measured in mph.")
-(arity engineAccelerationMph 2)
-(arg1Isa engineAccelerationMph CarEngine)
-(arg2Isa engineAccelerationMph ScalarInterval)
+(isa engineAcceleration62 Predicate)
+(comment engineAcceleration62 "engineAcceleration62 relates a car engine to its acceleration measured in mph.")
+(arity engineAcceleration62 2)
+(arg1Isa engineAcceleration62 CarEngine)
+(arg2Isa engineAcceleration62 ScalarInterval)
 
 (isa engineTopSpeedMph Predicate)
 (comment engineTopSpeedMph "engineTopSpeedMph relates a car engine to its top speed measured in mph.")
@@ -195,6 +195,15 @@ fuel economy in highway driving conditions, measured in mpg.")
 
 (isa FictionalCar Collection)
 (genls FictionalCar Car)
+
+(isa CompactElectricCar Collection)
+(genls CompactElectricCar Car)
+
+(isa EcoFriendlyCityCar Collection)
+(genls EcoFriendlyCityCar Car)
+
+(isa HighPerformanceSportsCar Collection)
+(genls HighPerformanceSportsCar Car)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; End of Code
