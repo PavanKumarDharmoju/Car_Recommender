@@ -1321,7 +1321,7 @@
 
 ;;; Engine-Specific Details for Batmobile Jet Engine
 (engineHP Batmobile-Jet-Engine 1500) ; Assuming fictional 1500 horsepower
-(engineAccelerationSec Batmobile-Jet-Engine 2.5) ; 0-60 mph in seconds, estimated for dramatic effect
+(engineAcceleration62 Batmobile-Jet-Engine 2.5) ; 0-60 mph in seconds, estimated for dramatic effect
 (engineTopSpeedMph Batmobile-Jet-Engine 350) ; Top speed in mph, estimated for dramatic effect
 (engineTorqueNm Batmobile-Jet-Engine 2000) ; Speculative torque in Nm
 (engineFuelCapacityGl Batmobile-Jet-Engine 100) ; Speculative fuel capacity in gallons
